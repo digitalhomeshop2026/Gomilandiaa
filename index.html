@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Gomilandia — Gomitas frutales naturales</title>
+<meta name="description" content="Gomilandia: gomitas frutales naturales hechas con jugo de fruta real, pectina natural y cero colorantes artificiales. Divertidas para los niños, honestas para los papás.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRjlCQzAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjREOEQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9InVybCgjZmcpIi8+CjxjaXJjbGUgY3g9IjI0IiBjeT0iNTEiIHI9IjUiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8Y2lyY2xlIGN4PSI0MCIgY3k9IjUxIiByPSI1IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjkiLz4KPGVsbGlwc2UgY3g9IjMyIiBjeT0iNDEiIHJ4PSIxNSIgcnk9IjEzIiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjkiLz4KPGNpcmNsZSBjeD0iMTgiIGN5PSIzMiIgcj0iNiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjQ2IiBjeT0iMzIiIHI9IjYiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8Y2lyY2xlIGN4PSIyNiIgY3k9IjE1IiByPSI1IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjkiLz4KPGNpcmNsZSBjeD0iMzgiIGN5PSIxNSIgcj0iNSIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxlbGxpcHNlIGN4PSIzMiIgY3k9IjIzIiByeD0iMTAiIHJ5PSI5IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjkiLz4KPC9zdmc+">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   GOMILANDIA — Gomitas frutales naturales
+   Paleta alegre tipo golosina, tipografía redondeada, diseño responsive.
+   ========================================================================== */
+
+:root{
+  --bg:#FFF9F0;
+  --card:#FFFFFF;
+  --ink:#3A2A55;
+  --ink-2:#57466F;
+  --muted:#83719B;
+  --line:#F0E2F4;
+
+  --berry:#FF4D8D;
+  --berry-2:#FF7AA8;
+  --berry-dark:#E93674;
+  --lime:#9CD328;
+  --lime-2:#C8E86F;
+  --lime-dark:#7FB31A;
+  --sun:#FFC542;
+  --sun-2:#FFDE8A;
+  --sky:#4FB7FF;
+  --grape:#9B6BFF;
+  --wa:#28C76F;
+
+  --grad-berry:linear-gradient(135deg,#FF7AA8 0%,#FF4D8D 100%);
+  --grad-berry-2:linear-gradient(135deg,#FF9BC0 0%,#FF4D8D 60%,#E93674 100%);
+  --grad-sun:linear-gradient(135deg,#FFDE8A 0%,#FFC542 100%);
+  --grad-lime:linear-gradient(135deg,#D4F079 0%,#9CD328 100%);
+  --grad-sky:linear-gradient(135deg,#8ED6FF 0%,#4FB7FF 100%);
+  --grad-grape:linear-gradient(135deg,#C9A8FF 0%,#9B6BFF 100%);
+
+  --shadow-sm:0 6px 16px rgba(146,85,200,.10);
+  --shadow-md:0 14px 34px rgba(146,85,200,.16);
+  --shadow-lg:0 24px 60px rgba(146,85,200,.22);
+  --radius-lg:28px;
+  --radius-md:18px;
+  --radius-sm:12px;
+
+  --font-head:'Fredoka',sans-serif;
+  --font-body:'Nunito',sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+body{
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  color:var(--ink);
+  background:var(--bg);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer}
+input,textarea{font-family:inherit}
+
+::selection{background:var(--berry);color:#fff}
+
+.container{width:min(1160px,92%);margin-inline:auto}
+
+.skip-link{
+  position:fixed;top:-60px;left:16px;z-index:2000;
+  background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;
+  transition:top .3s;
+}
+.skip-link:focus{top:16px}
+
+/* ============================== Fondo ============================== */
+
+.page-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5}
+.blob-1{width:520px;height:520px;top:-160px;left:-140px;background:radial-gradient(circle,#FFD6E8,transparent 70%)}
+.blob-2{width:480px;height:480px;top:20%;right:-180px;background:radial-gradient(circle,#E4FFC9,transparent 70%)}
+.blob-3{width:460px;height:460px;bottom:-140px;left:8%;background:radial-gradient(circle,#FFF0C2,transparent 70%)}
+.blob-4{width:420px;height:420px;bottom:30%;right:6%;background:radial-gradient(circle,#D9EBFF,transparent 70%)}
+
+.float-gum{
+  position:absolute;border-radius:50%;
+  box-shadow:inset 0 -6px 10px rgba(0,0,0,.06), 0 10px 20px rgba(146,85,200,.12);
+  animation:floatGum var(--dur,9s) ease-in-out infinite;
+  opacity:.9;
+}
+.gum-1{width:34px;height:34px;top:18%;left:6%;background:var(--grad-berry);--dur:8s}
+.gum-2{width:22px;height:22px;top:32%;right:12%;background:var(--grad-sun);--dur:10s}
+.gum-3{width:28px;height:28px;top:70%;left:14%;background:var(--grad-lime);--dur:11s}
+.gum-4{width:18px;height:18px;bottom:12%;right:20%;background:var(--grad-sky);--dur:9s}
+.gum-5{width:26px;height:26px;top:55%;left:4%;background:var(--grad-grape);--dur:12s}
+.gum-6{width:20px;height:20px;top:10%;right:26%;background:var(--grad-berry-2);--dur:8.5s}
+
+@keyframes floatGum{
+  0%,100%{transform:translateY(0) rotate(0deg)}
+  50%{transform:translateY(-22px) rotate(12deg)}
+}
+
+/* ============================== Botones ============================== */
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  border:none;font-weight:800;border-radius:999px;
+  padding:12px 22px;font-size:15px;line-height:1.2;
+  transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(0) scale(.98)}
+
+.btn-pill{box-shadow:0 8px 20px rgba(146,85,200,.25)}
+.btn-lg{padding:15px 30px;font-size:16px}
+
+.btn-berry{
+  color:#fff;background:var(--grad-berry);
+  box-shadow:0 10px 24px rgba(255,77,141,.38);
+}
+.btn-berry:hover{filter:brightness(1.06);box-shadow:0 14px 30px rgba(255,77,141,.45)}
+
+.btn-ghost{
+  color:var(--ink);background:#fff;
+  border:2.5px solid var(--line);
+  box-shadow:var(--shadow-sm);
+}
+.btn-ghost:hover{border-color:var(--berry);color:var(--berry)}
+
+/* ============================== Header ============================== */
+
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  transition:background .3s,box-shadow .3s,padding .3s;
+}
+.site-header.scrolled{
+  background:rgba(255,253,248,.92);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 4px 24px rgba(146,85,200,.10);
+}
+
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:16px 0;
+  transition:padding .3s;
+}
+.site-header.scrolled .nav{padding:10px 0}
+
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-logo{width:46px;height:46px;border-radius:14px;object-fit:cover}
+.brand-name{
+  font-family:var(--font-head);font-weight:700;font-size:22px;
+  color:var(--ink);letter-spacing:.5px;
+}
+.brand-name::after{content:"";display:block;height:4px;width:60%;margin-top:1px;border-radius:99px;background:var(--grad-sun)}
+
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-link{
+  position:relative;padding:9px 13px;border-radius:999px;
+  font-weight:800;font-size:14.5px;color:var(--ink-2);
+  transition:color .2s,background .2s;
+}
+.nav-link:hover{color:var(--berry);background:#FFF0F6}
+.nav-link.active{color:var(--berry);background:#FFF0F6}
+
+.nav-actions{display:flex;align-items:center;gap:12px}
+
+.lang-switch{
+  display:inline-flex;background:#fff;border:2px solid var(--line);
+  border-radius:999px;padding:3px;box-shadow:var(--shadow-sm);
+}
+.lang-btn{
+  border:none;background:transparent;padding:6px 11px;border-radius:999px;
+  font-weight:800;font-size:12.5px;color:var(--muted);
+  transition:background .2s,color .2s;
+}
+.lang-btn:hover{color:var(--berry)}
+.lang-btn.active{background:var(--grad-berry);color:#fff;box-shadow:0 4px 10px rgba(255,77,141,.35)}
+
+.menu-toggle{
+  display:none;flex-direction:column;gap:5px;
+  width:46px;height:46px;border:2px solid var(--line);border-radius:14px;
+  background:#fff;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-sm);
+}
+.menu-toggle span{display:block;width:20px;height:2.6px;border-radius:99px;background:var(--ink);transition:transform .3s,opacity .3s}
+.menu-toggle.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.menu-toggle.open span:nth-child(2){opacity:0}
+.menu-toggle.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* ============================== Hero ============================== */
+
+.hero.section{
+  position:relative;
+  padding:150px 0 110px;
+  display:flex;align-items:center;
+  min-height:100vh;
+  min-height:100svh;
+}
+
+.hero-grid{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;
+}
+
+.hero-badge{
+  display:inline-flex;align-items:center;gap:9px;
+  background:#fff;border:2px solid var(--line);
+  padding:8px 16px;border-radius:999px;
+  font-weight:800;font-size:14px;color:var(--ink-2);
+  box-shadow:var(--shadow-sm);margin-bottom:22px;
+}
+.badge-dot{width:10px;height:10px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px #EAF9C9}
+
+.hero-title{
+  font-family:var(--font-head);font-weight:700;
+  font-size:clamp(2.6rem,6vw,4.2rem);
+  line-height:1.08;letter-spacing:.5px;color:var(--ink);
+  margin-bottom:20px;
+  isolation:isolate;
+}
+.hero-title .text-sun{
+  display:block;color:var(--berry);
+  position:relative;
+}
+.hero-title .text-sun::after{
+  content:"";position:absolute;left:0;right:0;bottom:4px;height:16px;
+  background:var(--grad-sun);z-index:-1;border-radius:4px;opacity:.85;
+}
+
+.hero-sub{
+  font-size:18px;font-weight:600;color:var(--ink-2);
+  max-width:560px;margin-bottom:30px;
+}
+
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+
+.hero-points{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  max-width:640px;
+}
+.point{
+  display:flex;gap:12px;align-items:flex-start;
+  background:#fff;border:2px solid var(--line);
+  border-radius:var(--radius-md);padding:16px;
+  box-shadow:var(--shadow-sm);
+}
+.point-ic{
+  flex-shrink:0;width:42px;height:42px;border-radius:13px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.point-txt{display:flex;flex-direction:column}
+.point-txt strong{font-size:14.5px;color:var(--ink);line-height:1.3}
+.point-txt span:last-child{font-size:12.5px;color:var(--muted);font-weight:600}
+
+.ic-strawberry{background:#FFE1EC}
+.ic-strawberry::before{
+  content:"";width:20px;height:24px;border-radius:8px 8px 14px 14px;
+  background:var(--grad-berry);
+  background-image:radial-gradient(circle at 30% 30%,#fff 1.5px,transparent 2px),
+                   radial-gradient(circle at 70% 45%,#fff 1.5px,transparent 2px),
+                   radial-gradient(circle at 45% 65%,#fff 1.5px,transparent 2px);
+  background-size:9px 9px,9px 9px,9px 9px;
+  background-position:0 0,0 0,0 0;
+}
+.ic-leaf{background:#EAF9C9}
+.ic-leaf::before{
+  content:"";width:22px;height:16px;
+  background:var(--grad-lime);
+  border-radius:100% 0 100% 0;
+  transform:rotate(-30deg);
+}
+.ic-heart{background:#FFE1EC}
+.ic-heart::before,.ic-heart::after{
+  content:"";position:absolute;width:11px;height:16px;border-radius:8px 8px 0 0;
+  background:var(--grad-berry);top:10px;
+}
+.ic-heart::before{left:11px;transform:rotate(-45deg)}
+.ic-heart::after{right:11px;transform:rotate(45deg)}
+.ic-paint{background:#FFF6DC}
+.ic-paint::before{
+  content:"";width:18px;height:22px;
+  background:var(--grad-sun);
+  border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+  transform:rotate(45deg) scale(.8);
+  clip-path:polygon(50% 0,100% 60%,80% 100%,50% 85%,20% 100%,0 60%);
+}
+
+.hero-art{position:relative}
+.hero-art img{
+  width:100%;max-width:520px;margin-inline:auto;
+  filter:drop-shadow(0 30px 40px rgba(255,90,150,.28));
+  animation:heroBob 5s ease-in-out infinite;
+}
+@keyframes heroBob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-16px) rotate(2deg)}}
+
+.hero-scroll{
+  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  width:30px;height:46px;border:2.5px solid var(--line);
+  border-radius:999px;display:flex;justify-content:center;padding-top:8px;
+  background:#fff;box-shadow:var(--shadow-sm);
+}
+.hero-scroll-dot{width:5px;height:9px;border-radius:99px;background:var(--berry);animation:scrollDot 1.6s ease-in-out infinite}
+@keyframes scrollDot{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(10px);opacity:.4}}
+
+/* ============================== Secciones ============================== */
+
+.section{padding:110px 0;scroll-margin-top:90px}
+
+.section-head{max-width:680px;margin:0 auto 56px;text-align:center}
+.section-tag{
+  display:inline-block;background:#fff;border:2px solid var(--line);
+  color:var(--berry);font-weight:800;font-size:13px;letter-spacing:2.5px;
+  text-transform:uppercase;padding:8px 18px;border-radius:999px;
+  box-shadow:var(--shadow-sm);margin-bottom:18px;
+}
+.section-title{
+  font-family:var(--font-head);font-weight:700;
+  font-size:clamp(2rem,4.5vw,3rem);line-height:1.15;color:var(--ink);
+  margin-bottom:14px;
+}
+.section-sub{font-size:17px;font-weight:600;color:var(--ink-2)}
+
+.text-berry{color:var(--berry)}
+.text-sun{color:var(--sun)}
+
+/* ============================== Sobre nosotros ============================== */
+
+.about{background:linear-gradient(180deg,transparent,rgba(255,236,220,.5),transparent)}
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:center}
+
+.about-art img{width:100%;max-width:460px;margin-inline:auto;filter:drop-shadow(0 24px 34px rgba(146,85,200,.18))}
+.owners-photo{margin-top:22px!important;max-width:360px!important;border:6px solid #fff;border-radius:var(--radius-md);box-shadow:var(--shadow-md);filter:none!important}
+
+.about-text .section-tag{margin-bottom:16px}
+.about-text p{font-size:16.5px;font-weight:600;color:var(--ink-2);margin-bottom:16px}
+.about-text p:first-of-type{margin-top:6px}
+
+.values{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;
+}
+.value{
+  background:#fff;border:2px solid var(--line);border-radius:var(--radius-md);
+  padding:22px 18px;box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s;
+}
+.value:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.value-ic{margin-bottom:14px}
+.value h3{font-family:var(--font-head);font-size:18px;color:var(--ink);margin-bottom:6px}
+.value p{font-size:14px;color:var(--muted);font-weight:600;margin:0}
+
+/* ============================== Productos ============================== */
+
+.product-note{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-top:22px;background:var(--grad-sun);
+  color:#6B4A00;font-weight:800;font-size:14.5px;
+  padding:11px 20px;border-radius:999px;
+  box-shadow:0 8px 20px rgba(255,197,66,.35);
+}
+.product-note-dot{width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.35)}
+
+.flavors-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+}
+.flavor-card{
+  background:var(--card);border-radius:var(--radius-lg);
+  overflow:hidden;border:2px solid var(--line);
+  box-shadow:var(--shadow-md);
+  transition:transform .3s,box-shadow .3s;
+  display:flex;flex-direction:column;
+}
+.flavor-card:hover{transform:translateY(-10px) rotate(-1deg);box-shadow:var(--shadow-lg)}
+.flavor-img{
+  position:relative;aspect-ratio:1/1;overflow:hidden;
+  background:linear-gradient(160deg,var(--fc-soft,#FFF0F6),#fff);
+  display:flex;align-items:center;justify-content:center;
+}
+.flavor-img img{
+  width:74%;object-fit:contain;
+  filter:drop-shadow(0 16px 22px rgba(146,85,200,.25));
+  transition:transform .4s;
+}
+.flavor-card:hover .flavor-img img{transform:scale(1.1) rotate(-4deg)}
+.flavor-badges{position:absolute;top:12px;left:12px;display:flex;gap:6px;flex-wrap:wrap}
+
+.nutrition-info{
+  max-width:760px;margin:38px auto 0;padding:18px;
+  background:#fff;border:2px solid var(--line);border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-md);
+}
+.nutrition-info img{width:100%;height:auto;border-radius:var(--radius-md)}
+
+.flavor-chip{
+  display:inline-flex;align-items:center;
+  font-size:11px;font-weight:800;letter-spacing:.4px;
+  padding:5px 11px;border-radius:999px;color:#fff;
+}
+.chip-lime{background:var(--grad-lime);color:#3C5200;box-shadow:0 3px 8px rgba(156,211,40,.35)}
+.chip-sun{background:var(--grad-sun);color:#6B4A00;box-shadow:0 3px 8px rgba(255,197,66,.35)}
+.chip-berry{background:var(--grad-berry);box-shadow:0 3px 8px rgba(255,77,141,.35)}
+.chip-grape{background:var(--grad-grape);box-shadow:0 3px 8px rgba(155,107,255,.35)}
+.chip-sky{background:var(--grad-sky);color:#064E8C;box-shadow:0 3px 8px rgba(79,183,255,.35)}
+
+.flavor-body{
+  padding:22px;display:flex;flex-direction:column;gap:10px;flex:1;
+}
+.flavor-name{
+  font-family:var(--font-head);font-size:20px;color:var(--ink);
+}
+.flavor-desc{font-size:14px;font-weight:600;color:var(--muted);flex:1}
+.flavor-btn{
+  margin-top:6px;display:inline-flex;align-items:center;justify-content:space-between;gap:8px;
+  border:2px solid var(--line);background:#fff;border-radius:999px;
+  padding:11px 16px;font-weight:800;font-size:14px;color:var(--berry);
+  transition:all .25s;
+}
+.flavor-btn:hover{background:var(--grad-berry);border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(255,77,141,.4)}
+.flavor-btn svg{transition:transform .25s}
+.flavor-btn:hover svg{transform:translateX(4px)}
+
+/* ============================== Galería ============================== */
+
+.gallery{background:linear-gradient(180deg,transparent,rgba(228,255,201,.35),transparent)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.presentation-photo{max-width:900px;margin:0 auto 34px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-md)}
+.presentation-photo img{width:100%;max-height:520px;object-fit:cover;border-radius:10px}
+.plan-section{background:linear-gradient(180deg,rgba(238,250,221,.38),transparent 55%,rgba(255,241,225,.32))}
+.plan-layout{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+.plan-visual{padding:12px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-md)}
+.plan-visual img{width:100%;height:auto;border-radius:10px}
+.plan-copy{max-width:520px}
+.plan-copy .section-title{margin-top:14px}
+.plan-copy p{font-size:16px;font-weight:600;line-height:1.75;color:var(--ink-2);margin-top:18px}
+
+.gallery-item{
+  position:relative;border-radius:var(--radius-lg);overflow:hidden;
+  border:2px solid var(--line);box-shadow:var(--shadow-md);
+  aspect-ratio:4/3;background:#fff;
+}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .5s;
+}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-caption{
+  position:absolute;inset:auto 0 0 0;padding:36px 20px 16px;
+  background:linear-gradient(transparent,rgba(58,42,85,.82));
+  color:#fff;display:flex;flex-direction:column;gap:2px;
+  opacity:0;transform:translateY(12px);transition:opacity .3s,transform .3s;
+}
+.gallery-item:hover .gallery-caption{opacity:1;transform:translateY(0)}
+.gallery-name{font-family:var(--font-head);font-size:18px;font-weight:600}
+.gallery-caption span:last-child{font-size:13px;font-weight:600;opacity:.9}
+
+/* ============================== Testimonios ============================== */
+
+.testimonials{background:linear-gradient(180deg,transparent,rgba(255,214,232,.4),transparent)}
+
+.t-slider{max-width:820px;margin:0 auto;position:relative}
+.t-track{overflow:hidden;border-radius:var(--radius-lg)}
+.t-slides-inner{display:flex;transition:transform .5s ease}
+
+.t-slide{min-width:100%;padding:6px}
+.t-card{
+  background:#fff;border:2px solid var(--line);border-radius:var(--radius-lg);
+  padding:38px 40px;box-shadow:var(--shadow-md);
+  text-align:center;position:relative;
+}
+.t-card::before{
+  content:"\201C";position:absolute;top:6px;left:26px;
+  font-family:Georgia,serif;font-size:110px;line-height:1;color:#FFE1EC;
+}
+.t-quote{font-size:18px;font-weight:700;color:var(--ink);line-height:1.65;margin-bottom:24px;position:relative}
+.t-author{display:flex;align-items:center;justify-content:center;gap:14px}
+.t-avatar{
+  width:52px;height:52px;border-radius:50%;
+  background:var(--grad-berry);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-head);font-weight:600;font-size:20px;
+  box-shadow:0 6px 14px rgba(255,77,141,.35);
+}
+.t-author.a2 .t-avatar{background:var(--grad-sky);box-shadow:0 6px 14px rgba(79,183,255,.35)}
+.t-author.a3 .t-avatar{background:var(--grad-lime);color:#3C5200;box-shadow:0 6px 14px rgba(156,211,40,.35)}
+.t-author.a4 .t-avatar{background:var(--grad-grape);box-shadow:0 6px 14px rgba(155,107,255,.35)}
+.t-name{font-family:var(--font-head);font-size:16px;color:var(--ink)}
+.t-role{font-size:13px;font-weight:700;color:var(--muted)}
+
+.t-controls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:28px}
+.t-arrow{
+  width:48px;height:48px;border-radius:50%;
+  border:2px solid var(--line);background:#fff;color:var(--berry);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-sm);transition:all .25s;
+}
+.t-arrow:hover{background:var(--grad-berry);border-color:transparent;color:#fff;transform:scale(1.08)}
+.t-dots{display:flex;gap:9px}
+.t-dot{
+  width:11px;height:11px;border-radius:50%;border:none;
+  background:#E8D7F0;transition:all .3s;
+}
+.t-dot.active{background:var(--grad-berry);width:30px;border-radius:99px;box-shadow:0 3px 8px rgba(255,77,141,.4)}
+
+/* ============================== Contacto ============================== */
+
+.contact{background:linear-gradient(180deg,transparent,rgba(255,236,220,.5),transparent)}
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:stretch}
+
+.contact-form{
+  background:#fff;border:2px solid var(--line);border-radius:var(--radius-lg);
+  padding:38px;box-shadow:var(--shadow-md);
+  display:flex;flex-direction:column;gap:20px;
+}
+.field{display:flex;flex-direction:column;gap:8px}
+.field-label{font-weight:800;font-size:14px;color:var(--ink)}
+.field-input{
+  width:100%;border:2px solid var(--line);border-radius:var(--radius-sm);
+  padding:14px 16px;font-size:15px;font-weight:600;color:var(--ink);
+  background:#FFFBF5;transition:border-color .2s,box-shadow .2s;resize:vertical;
+}
+.field-input::placeholder{color:#C9B9D8}
+.field-input:focus{
+  outline:none;border-color:var(--berry);
+  box-shadow:0 0 0 4px rgba(255,77,141,.15);background:#fff;
+}
+.form-submit{width:100%}
+.form-note{font-size:13px;font-weight:700;color:var(--muted);text-align:center}
+
+.contact-info{display:flex}
+.info-card{
+  flex:1;background:var(--grad-berry-2);color:#fff;
+  border-radius:var(--radius-lg);padding:38px;
+  box-shadow:var(--shadow-lg);
+  display:flex;flex-direction:column;gap:16px;
+}
+.info-card h3{font-family:var(--font-head);font-size:20px;font-weight:600}
+.info-whatsapp{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#fff;color:var(--wa);font-weight:800;font-size:15px;
+  padding:13px 20px;border-radius:999px;align-self:flex-start;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);transition:transform .25s;
+}
+.info-whatsapp:hover{transform:translateY(-3px)}
+.info-divider{height:2px;background:rgba(255,255,255,.35);margin:6px 0;border-radius:99px}
+
+.socials{display:flex;gap:12px}
+.social-link{
+  width:48px;height:48px;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  background:#fff;color:var(--ink-2);
+  box-shadow:0 6px 14px rgba(0,0,0,.14);
+  transition:transform .25s,color .25s,background .25s;
+}
+.social-link:hover{transform:translateY(-4px) scale(1.06)}
+.social-link.instagram:hover{color:#fff;background:linear-gradient(45deg,#FED976,#F58529,#DD2A7B,#8134AF)}
+.social-link.tiktok:hover{color:#fff;background:#000}
+.social-link.whatsapp:hover{color:#fff;background:var(--wa)}
+.info-note{font-size:13.5px;font-weight:600;opacity:.92}
+
+/* ============================== FAQ ============================== */
+
+.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+
+.faq-item{
+  background:#fff;border:2px solid var(--line);border-radius:var(--radius-md);
+  overflow:hidden;box-shadow:var(--shadow-sm);
+  transition:border-color .3s,box-shadow .3s;
+}
+.faq-item.open{border-color:var(--berry);box-shadow:var(--shadow-md)}
+.faq-q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  background:none;border:none;padding:22px 24px;
+  text-align:left;font-size:16.5px;font-weight:800;color:var(--ink);
+}
+.faq-icon{
+  flex-shrink:0;width:32px;height:32px;border-radius:50%;
+  background:#FFF0F6;color:var(--berry);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;font-weight:700;transition:transform .3s,background .3s,color .3s;
+}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--grad-berry);color:#fff}
+.faq-a{
+  display:grid;grid-template-rows:0fr;
+  transition:grid-template-rows .35s ease;
+}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-a-inner{overflow:hidden}
+.faq-a-inner p{padding:0 24px 22px;font-size:15px;font-weight:600;color:var(--ink-2)}
+
+/* ============================== Footer ============================== */
+
+.footer{
+  background:linear-gradient(135deg,#4A3270 0%,#3A2A55 60%,#2E2142 100%);
+  color:#E9DEF7;margin-top:60px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;
+  padding:70px 0 46px;
+}
+.footer .brand-name{color:#fff}
+.footer .brand-name::after{background:var(--grad-berry)}
+.footer-brand p{font-size:15px;font-weight:600;color:#C4B3DE;margin:18px 0 22px;max-width:340px}
+.footer-socials{display:flex;gap:10px}
+.footer-socials .social-link{background:rgba(255,255,255,.08);color:#fff;box-shadow:none}
+.footer-socials .social-link:hover{transform:translateY(-4px)}
+.footer-title{
+  font-family:var(--font-head);font-size:17px;font-weight:600;
+  color:#fff;margin-bottom:18px;
+}
+.footer-links{display:flex;flex-direction:column;gap:11px}
+.footer-links a{font-size:14.5px;font-weight:700;color:#C4B3DE;transition:color .2s,padding-left .2s}
+.footer-links a:hover{color:#FF9BC0;padding-left:4px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12)}
+.footer-bottom-inner{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  padding:22px 0;font-size:13.5px;font-weight:700;color:#A693C6;
+}
+.footer-made{display:inline-flex;align-items:center;gap:7px}
+
+/* ============================== WhatsApp flotante ============================== */
+
+.whatsapp-float{
+  position:fixed;bottom:26px;right:26px;z-index:950;
+  width:62px;height:62px;border-radius:50%;
+  background:linear-gradient(135deg,#4BE08A,#1FB75F);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 30px rgba(40,199,111,.45);
+  transition:transform .25s,box-shadow .25s;
+}
+.whatsapp-float:hover{transform:translateY(-5px) scale(1.06);box-shadow:0 18px 40px rgba(40,199,111,.55)}
+.wa-pulse{
+  position:absolute;inset:0;border-radius:50%;
+  border:3px solid rgba(40,199,111,.5);
+  animation:waPulse 2.2s ease-out infinite;
+}
+@keyframes waPulse{
+  0%{transform:scale(1);opacity:1}
+  100%{transform:scale(1.55);opacity:0}
+}
+
+/* ============================== Modal ============================== */
+
+.modal{
+  position:fixed;inset:0;z-index:1000;
+  display:flex;align-items:center;justify-content:center;
+  padding:24px;visibility:hidden;opacity:0;
+  transition:opacity .3s,visibility .3s;
+}
+.modal::before{
+  content:"";position:absolute;inset:0;
+  background:rgba(58,42,85,.55);backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+.modal.open{visibility:visible;opacity:1}
+
+.modal-card{
+  position:relative;width:min(880px,100%);max-height:90vh;overflow-y:auto;
+  background:#fff;border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-lg);
+  transform:translateY(30px) scale(.96);
+  transition:transform .35s ease;
+}
+.modal.open .modal-card{transform:translateY(0) scale(1)}
+.modal-close{
+  position:absolute;top:16px;right:16px;z-index:5;
+  width:42px;height:42px;border-radius:50%;
+  border:2px solid var(--line);background:#fff;color:var(--ink);
+  font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-sm);transition:all .25s;
+}
+.modal-close:hover{background:var(--berry);border-color:transparent;color:#fff;transform:rotate(90deg)}
+
+.modal-body{display:grid;grid-template-columns:1fr 1fr}
+.modal-img{
+  background:linear-gradient(160deg,var(--fc-soft,#FFF0F6),#fff);
+  display:flex;align-items:center;justify-content:center;
+  padding:34px;min-height:340px;
+}
+.modal-img img{width:80%;filter:drop-shadow(0 20px 26px rgba(146,85,200,.3));animation:heroBob 4.5s ease-in-out infinite}
+.modal-info{padding:38px 34px;display:flex;flex-direction:column;gap:12px}
+.modal-chip{
+  align-self:flex-start;background:var(--grad-sun);color:#6B4A00;
+  font-size:12px;font-weight:800;padding:6px 14px;border-radius:999px;
+}
+.modal-flavor-label{
+  font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  color:var(--muted);
+}
+.modal-title{font-family:var(--font-head);font-size:30px;color:var(--ink);line-height:1.1}
+.modal-desc{font-size:15.5px;font-weight:600;color:var(--ink-2)}
+.modal-ing-box{
+  background:#FFFBF5;border:2px solid var(--line);border-radius:var(--radius-sm);
+  padding:16px 18px;
+}
+.modal-ing-title{font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--berry);margin-bottom:6px}
+.modal-ing{font-size:14px;font-weight:600;color:var(--ink-2)}
+.modal-actions{margin-top:8px;display:flex;flex-direction:column;gap:16px}
+.modal-order{width:100%}
+.modal-badges{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ============================== Reveal ============================== */
+
+[data-reveal]{
+  opacity:0;transform:translateY(26px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+[data-reveal].revealed{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion:reduce){
+  [data-reveal]{opacity:1;transform:none}
+  .float-gum,.hero-art img,.hero-scroll-dot,.modal-img img{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ============================== Responsive ============================== */
+
+@media (max-width:1024px){
+  .flavors-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+@media (max-width:900px){
+  .nav-links{
+    position:fixed;inset:76px 16px auto 16px;z-index:890;
+    flex-direction:column;align-items:stretch;gap:6px;
+    background:#fff;border:2px solid var(--line);border-radius:var(--radius-lg);
+    padding:16px;box-shadow:var(--shadow-lg);
+    transform:translateY(-16px);opacity:0;visibility:hidden;
+    transition:transform .3s,opacity .3s,visibility .3s;
+  }
+  .nav-links.open{transform:translateY(0);opacity:1;visibility:visible}
+  .nav-link{padding:13px 16px;font-size:16px}
+  .menu-toggle{display:flex}
+  .nav-cta{display:none}
+
+  .hero-grid{grid-template-columns:1fr;gap:36px;text-align:center}
+  .hero-sub{margin-inline:auto}
+  .hero-cta,.hero-points{justify-content:center}
+  .hero-points{margin-inline:auto}
+  .hero-art{max-width:420px;margin-inline:auto}
+  .hero.section{min-height:auto}
+
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .about-art{max-width:400px;margin-inline:auto}
+
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+
+  .plan-layout{grid-template-columns:1fr;gap:30px}
+  .plan-copy{max-width:none}
+
+  .contact-grid{grid-template-columns:1fr}
+  .modal-body{grid-template-columns:1fr}
+  .modal-img{min-height:0;padding:30px}
+  .modal-img img{max-width:240px}
+}
+
+@media (max-width:640px){
+  .section{padding:84px 0}
+  .hero{padding:120px 0 80px}
+
+  .hero-points{grid-template-columns:1fr;max-width:420px}
+  .flavors-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .flavor-body{padding:16px}
+  .flavor-name{font-size:17px}
+  .flavor-desc{font-size:13px}
+
+  .values{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr;gap:16px}
+  .t-card{padding:28px 22px}
+  .t-quote{font-size:16px}
+  .contact-form,.info-card{padding:26px}
+  .footer-grid{grid-template-columns:1fr;gap:34px;padding:52px 0 36px}
+  .footer-bottom-inner{flex-direction:column;text-align:center}
+  .whatsapp-float{width:56px;height:56px;bottom:18px;right:18px}
+  .nav-actions{gap:8px}
+  .brand-name{font-size:19px}
+  .brand-logo{width:40px;height:40px}
+}
+
+@media (max-width:380px){
+  .flavors-grid{grid-template-columns:1fr}
+  .lang-btn{padding:6px 9px;font-size:11.5px}
+}
+
+/* ============================== Refinamiento visual ============================== */
+
+:root{
+  --bg:#FFF9F4;
+  --card:#FFFFFF;
+  --ink:#30243D;
+  --ink-2:#63556B;
+  --muted:#8C7B91;
+  --line:#EBDDE2;
+  --berry:#F04472;
+  --berry-2:#FF7899;
+  --berry-dark:#D82E5E;
+  --lime:#9BCB3B;
+  --sun:#F8B93E;
+  --sky:#42A9DF;
+  --grape:#8D70D8;
+  --grad-berry:linear-gradient(135deg,#FF7899 0%,#F04472 100%);
+  --grad-berry-2:linear-gradient(135deg,#F76B8F 0%,#CF3B68 100%);
+  --shadow-sm:0 5px 14px rgba(73,45,67,.08);
+  --shadow-md:0 14px 30px rgba(73,45,67,.12);
+  --shadow-lg:0 22px 48px rgba(73,45,67,.18);
+  --radius-lg:18px;
+  --radius-md:14px;
+  --radius-sm:9px;
+}
+
+body{background:var(--bg);color:var(--ink)}
+.page-bg{opacity:.62}
+.blob{filter:blur(90px);opacity:.34}
+.site-header{background:rgba(255,250,246,.84);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(235,221,226,.72)}
+.site-header.scrolled{background:rgba(255,250,246,.96);box-shadow:0 8px 26px rgba(73,45,67,.09)}
+.nav{padding:13px 0}
+.brand{gap:12px}
+.brand-logo{border:2px solid #fff;box-shadow:0 5px 12px rgba(73,45,67,.14)}
+.brand-name{font-size:21px;letter-spacing:0;color:var(--ink)}
+.brand-name::after{height:3px;width:48%;margin-top:3px}
+.nav-links{gap:2px}
+.nav-link{padding:8px 11px;border-radius:9px;font-size:13.5px}
+.nav-link:hover,.nav-link.active{background:#FFF0F4;color:var(--berry)}
+.lang-switch{border-width:1px;padding:2px;box-shadow:none}
+.lang-btn{padding:6px 10px}
+.btn{border-radius:12px;padding:12px 20px;box-shadow:none}
+.btn-lg{padding:14px 24px}
+.btn-berry{box-shadow:0 9px 18px rgba(240,68,114,.25)}
+.btn-ghost{border:1px solid var(--line);background:rgba(255,255,255,.74)}
+
+.hero.section{padding-top:138px;background:linear-gradient(180deg,rgba(255,236,241,.55),rgba(255,249,244,0) 76%)}
+.hero-grid{gap:66px}
+.hero-title{font-size:clamp(2.55rem,5.7vw,4.15rem);letter-spacing:0;line-height:1.02}
+.hero-title .text-sun::after{height:11px;bottom:2px;opacity:.7}
+.hero-sub{font-size:17px;line-height:1.72;color:var(--ink-2)}
+.hero-badge{border:1px solid var(--line);box-shadow:var(--shadow-sm);border-radius:10px}
+.hero-points{gap:12px}
+.point{border:1px solid var(--line);border-radius:12px;padding:14px;background:rgba(255,255,255,.82);box-shadow:var(--shadow-sm)}
+.point-ic{width:38px;height:38px;border-radius:10px}
+.point-txt strong{font-size:13.5px}
+.point-txt span:last-child{font-size:12px}
+
+.section{padding:104px 0}
+.section-head{margin-bottom:46px}
+.section-tag{border:1px solid var(--line);border-radius:9px;padding:7px 14px;box-shadow:none;font-size:11px;letter-spacing:2px}
+.section-title{letter-spacing:0}
+.section-sub{font-size:16px;line-height:1.7}
+.about{background:linear-gradient(180deg,rgba(255,241,225,.4),transparent 35%,rgba(255,241,225,.35))}
+.about-art img{filter:drop-shadow(0 18px 24px rgba(73,45,67,.14))}
+.owners-photo{border-width:4px;box-shadow:var(--shadow-md)}
+.value,.flavor-card,.gallery-item,.t-card,.contact-form,.faq-item{border-width:1px;border-radius:16px;box-shadow:var(--shadow-sm)}
+.value{padding:20px 17px}
+.value:hover,.flavor-card:hover{box-shadow:var(--shadow-md)}
+
+.product-note{border-radius:10px;box-shadow:none;padding:10px 15px}
+.flavors-grid{gap:18px}
+.flavor-card{overflow:hidden}
+.flavor-img{aspect-ratio:1.08/1}
+.flavor-body{padding:18px}
+.flavor-btn{border-width:1px;border-radius:10px;padding:10px 13px}
+.nutrition-info{border-width:1px;border-radius:16px;box-shadow:var(--shadow-sm);padding:12px}
+
+.gallery{background:linear-gradient(180deg,rgba(238,250,221,.42),transparent 40%,rgba(238,250,221,.3))}
+.gallery-grid{gap:16px}
+.gallery-item{border-radius:16px}
+.gallery-caption{opacity:1;transform:none;padding:46px 16px 14px;background:linear-gradient(transparent,rgba(48,36,61,.8))}
+.testimonials{background:linear-gradient(180deg,rgba(255,225,235,.42),transparent 42%,rgba(255,225,235,.3))}
+.t-card{padding:34px 38px}
+.contact{background:linear-gradient(180deg,rgba(255,241,225,.42),transparent 42%,rgba(255,241,225,.28))}
+.contact-form,.info-card{border-radius:16px}
+.info-card{box-shadow:var(--shadow-lg)}
+.faq-list{gap:11px}
+.faq-item{border-radius:12px}
+.faq-q{padding:18px 20px;font-size:15.5px}
+.faq-a-inner p{padding:0 20px 19px;font-size:14.5px}
+.footer{background:linear-gradient(135deg,#3B2A48 0%,#30243D 68%,#241B2C 100%);margin-top:36px}
+.footer-grid{padding:62px 0 42px}
+
+@media (max-width:900px){
+  .nav{padding:10px 0}
+  .nav-links{inset:68px 12px auto 12px;border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:var(--shadow-lg)}
+  .nav-link{border-radius:9px}
+  .hero-grid{gap:38px}
+}
+
+@media (max-width:640px){
+  .hero.section{padding-top:112px}
+  .hero-title{font-size:clamp(2.25rem,11vw,3.1rem)}
+  .hero-sub{font-size:16px;line-height:1.65}
+  .hero-cta{gap:10px}
+  .btn-lg{padding:13px 18px;font-size:14px}
+  .section{padding:78px 0}
+  .section-head{margin-bottom:34px}
+  .section-title{font-size:clamp(1.9rem,9vw,2.5rem)}
+  .section-sub{font-size:15px}
+  .plan-copy p{font-size:15px;line-height:1.65}
+  .plan-visual{padding:8px;border-radius:13px}
+  .flavor-card{border-radius:13px}
+  .flavor-body{padding:14px}
+  .flavor-btn{font-size:12.5px}
+  .nutrition-info{margin-top:28px;padding:8px;border-radius:13px}
+  .t-card{padding:28px 20px}
+}
+
+</style>
+</head>
+<body>
+
+<div class="page-bg" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+  <span class="blob blob-4"></span>
+  <span class="float-gum gum-1"></span>
+  <span class="float-gum gum-2"></span>
+  <span class="float-gum gum-3"></span>
+  <span class="float-gum gum-4"></span>
+  <span class="float-gum gum-5"></span>
+  <span class="float-gum gum-6"></span>
+</div>
+
+<a class="skip-link" href="#inicio" data-i18n="nav.home">Ir al contenido</a>
+
+<header class="site-header" id="site-header">
+  <nav class="nav container" aria-label="Navegación principal">
+    <a class="brand" href="#inicio">
+      <img class="brand-logo" src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJsZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRjlCQzAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjREOEQiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSIxODQiIGhlaWdodD0iMTg0IiByeD0iNDYiIGZpbGw9InVybCgjbGcpIi8+CjxjaXJjbGUgY3g9IjcyIiBjeT0iMTY0IiByPSIxNSIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE2NCIgcj0iMTUiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTMwIiByeD0iNDciIHJ5PSI0MCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjU1IiBjeT0iMTAyIiByPSIxNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjE0NSIgY3k9IjEwMiIgcj0iMTciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8Y2lyY2xlIGN4PSI4MCIgY3k9IjQ0IiByPSIxNiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjEyMCIgY3k9IjQ0IiByPSIxNiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI2OCIgcng9IjMyIiByeT0iMjkiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTI0IiByeD0iMTQiIHJ5PSIxMCIgZmlsbD0iI0ZGOUJDMCIgb3BhY2l0eT0iMC41NSIvPgo8ZWxsaXBzZSBjeD0iODUiIGN5PSI1NCIgcng9IjgiIHJ5PSI2IiBmaWxsPSIjRkY5QkMwIiBvcGFjaXR5PSIwLjUiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjEzMCIgcng9IjIyIiByeT0iMTciIGZpbGw9IiNGRjlCQzAiIG9wYWNpdHk9IjAuNCIvPgo8L3N2Zz4=" alt="Logo Gomilandia">
+      <span class="brand-name">Gomilandia</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a class="nav-link active" href="#inicio" data-i18n="nav.home">Inicio</a></li>
+      <li><a class="nav-link" href="#sobre-nosotros" data-i18n="nav.about">Sobre nosotros</a></li>
+      <li><a class="nav-link" href="#productos" data-i18n="nav.products">Productos</a></li>
+      <li><a class="nav-link" href="#galeria" data-i18n="nav.gallery">Galería</a></li>
+      <li><a class="nav-link" href="#testimonios" data-i18n="nav.testimonials">Testimonios</a></li>
+      <li><a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      <li><a class="nav-link" href="#preguntas" data-i18n="nav.faq">Preguntas frecuentes</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button class="lang-btn active" data-lang="es" type="button" aria-label="Español">ES</button>
+        <button class="lang-btn" data-lang="en" type="button" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="pt" type="button" aria-label="Português">PT</button>
+      </div>
+      <a class="btn btn-pill btn-berry nav-cta" id="nav-order" href="#" target="_blank" rel="noopener" data-i18n="nav.buyNow">Pide por WhatsApp</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero section" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-text" data-reveal>
+        <span class="hero-badge"><span class="badge-dot"></span><span data-i18n="hero.badge">100% frutas, 0% artificiales</span></span>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title1">Las gomitas más naturales</span>
+          <span class="text-sun" data-i18n="hero.title2">y las más deliciosas</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.subtitle">Gomilandia nació para naturalizar las gomitas. Hacemos gomitas frutales con jugo de fruta real, pectina natural y cero colorantes artificiales. Divertidas para los niños, honestas para los papás.</p>
+        <div class="hero-cta">
+          <a class="btn btn-pill btn-berry btn-lg" href="#productos" data-i18n="hero.cta1">Ver productos</a>
+          <a class="btn btn-pill btn-ghost btn-lg" href="#sobre-nosotros" data-i18n="hero.cta2">Conoce nuestra historia</a>
+        </div>
+        <div class="hero-points">
+          <div class="point">
+            <span class="point-ic ic-strawberry" aria-hidden="true"></span>
+            <span class="point-txt"><strong data-i18n="hero.p1t">Jugo de fruta real</strong><span data-i18n="hero.p1d">Nada de sabores artificiales</span></span>
+          </div>
+          <div class="point">
+            <span class="point-ic ic-leaf" aria-hidden="true"></span>
+            <span class="point-txt"><strong data-i18n="hero.p2t">Color de la naturaleza</strong><span data-i18n="hero.p2d">Sin colorantes artificiales</span></span>
+          </div>
+          <div class="point">
+            <span class="point-ic ic-heart" aria-hidden="true"></span>
+            <span class="point-txt"><strong data-i18n="hero.p3t">Hechas con amor</strong><span data-i18n="hero.p3d">Pectina natural y mucha fruta</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-art" data-reveal>
+        <img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MjAgNTIwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iaDEiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRjlCQzAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjREOEQiLz48L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9ImgyIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZERThBIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZDNTQyIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJoMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0Q0RjA3OSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzlDRDMyOCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iaDQiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNDOUE4RkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5QjZCRkYiLz48L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxjaXJjbGUgY3g9IjI2MCIgY3k9IjI2MCIgcj0iMjMwIiBmaWxsPSIjRkZGMUY3Ii8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEzMCIgcj0iMzQiIGZpbGw9IiNGRkM1NDIiLz4KPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTMwIiByPSIxOCIgZmlsbD0iI0ZGRTA4QSIvPgo8Y2lyY2xlIGN4PSI0MDAiIGN5PSIxMTAiIHI9IjI2IiBmaWxsPSIjRkY0RDhEIi8+CjxjaXJjbGUgY3g9IjQwMCIgY3k9IjExMCIgcj0iMTMiIGZpbGw9IiNGRjlCQzAiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIwIiByPSIyNCIgZmlsbD0iIzlDRDMyOCIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSI0MjAiIHI9IjEyIiBmaWxsPSIjQ0RFRjdFIi8+CjxjaXJjbGUgY3g9IjQzMCIgY3k9IjQwMCIgcj0iMzAiIGZpbGw9IiM0RkI3RkYiLz4KPGNpcmNsZSBjeD0iNDMwIiBjeT0iNDAwIiByPSIxNSIgZmlsbD0iIzhFRDZGRiIvPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNTAsMTUwKSI+PGcgdHJhbnNmb3JtPSJzY2FsZSgxLjA1KSI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoMCwxMDAsMTAwKSI+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiNGRjREOEQiIG9wYWNpdHk9IjAuMTgiLz48Y2lyY2xlIGN4PSI3MiIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjaDEpIi8+PGNpcmNsZSBjeD0iMTI4IiBjeT0iMTg2IiByPSIxNiIgZmlsbD0idXJsKCNoMSkiLz48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTUwIiByeD0iNTAiIHJ5PSI0MiIgZmlsbD0idXJsKCNoMSkiLz48Y2lyY2xlIGN4PSI1MiIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjaDEpIi8+PGNpcmNsZSBjeD0iMTQ4IiBjeT0iMTE4IiByPSIxOSIgZmlsbD0idXJsKCNoMSkiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjQyIiByPSIxNyIgZmlsbD0idXJsKCNoMSkiLz48Y2lyY2xlIGN4PSIxMjAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjaDEpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjcwIiByeD0iMzQiIHJ5PSIzMSIgZmlsbD0idXJsKCNoMSkiLz48ZWxsaXBzZSBjeD0iMTUyIiBjeT0iMTQyIiByeD0iMTYiIHJ5PSIxMSIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC4yOCIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+PC9nPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMCwzMzApIj48ZyB0cmFuc2Zvcm09InNjYWxlKDAuOTUpIj48ZyB0cmFuc2Zvcm09InJvdGF0ZSgtMTgsMTAwLDEwMCkiPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNzIiIHJ4PSI2OCIgcnk9IjE1IiBmaWxsPSIjRkZDNTQyIiBvcGFjaXR5PSIwLjIiLz48Y2lyY2xlIGN4PSI3MiIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjaDIpIi8+PGNpcmNsZSBjeD0iMTI4IiBjeT0iMTg2IiByPSIxNiIgZmlsbD0idXJsKCNoMikiLz48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTUwIiByeD0iNTAiIHJ5PSI0MiIgZmlsbD0idXJsKCNoMikiLz48Y2lyY2xlIGN4PSI1MiIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjaDIpIi8+PGNpcmNsZSBjeD0iMTQ4IiBjeT0iMTE4IiByPSIxOSIgZmlsbD0idXJsKCNoMikiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjQyIiByPSIxNyIgZmlsbD0idXJsKCNoMikiLz48Y2lyY2xlIGN4PSIxMjAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjaDIpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjcwIiByeD0iMzQiIHJ5PSIzMSIgZmlsbD0idXJsKCNoMikiLz48ZWxsaXBzZSBjeD0iMTUyIiBjeT0iMTQyIiByeD0iMTYiIHJ5PSIxMSIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC4zIi8+PGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+PC9nPjwvZz48L2c+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwMCwyMCkiPjxnIHRyYW5zZm9ybT0ic2NhbGUoMC44NSkiPjxnIHRyYW5zZm9ybT0icm90YXRlKDE0LDEwMCwxMDApIj48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTcyIiByeD0iNjgiIHJ5PSIxNSIgZmlsbD0iIzlDRDMyOCIgb3BhY2l0eT0iMC4yIi8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2gzKSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjaDMpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjaDMpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2gzKSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjaDMpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjaDMpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2gzKSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjaDMpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMyIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+PC9nPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMzAsMzQwKSI+PGcgdHJhbnNmb3JtPSJzY2FsZSgwLjYpIj48ZyB0cmFuc2Zvcm09InJvdGF0ZSgyMiwxMDAsMTAwKSI+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiM5QjZCRkYiIG9wYWNpdHk9IjAuMiIvPjxjaXJjbGUgY3g9IjcyIiBjeT0iMTg2IiByPSIxNiIgZmlsbD0idXJsKCNoNCkiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2g0KSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSI1MCIgcnk9IjQyIiBmaWxsPSJ1cmwoI2g0KSIvPjxjaXJjbGUgY3g9IjUyIiBjeT0iMTE4IiByPSIxOSIgZmlsbD0idXJsKCNoNCkiLz48Y2lyY2xlIGN4PSIxNDgiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2g0KSIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2g0KSIvPjxjaXJjbGUgY3g9IjEyMCIgY3k9IjQyIiByPSIxNyIgZmlsbD0idXJsKCNoNCkiLz48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iNzAiIHJ4PSIzNCIgcnk9IjMxIiBmaWxsPSJ1cmwoI2g0KSIvPjxlbGxpcHNlIGN4PSIxNTIiIGN5PSIxNDIiIHJ4PSIxNiIgcnk9IjExIiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjMiLz48ZWxsaXBzZSBjeD0iODQiIGN5PSI1MiIgcng9IjkiIHJ5PSI3IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjUiLz48L2c+PC9nPjwvZz4KPC9zdmc+" alt="Gomitas frutales de Gomilandia flotando">
+      </div>
+    </div>
+    <a class="hero-scroll" href="#sobre-nosotros" aria-label="Bajar">
+      <span class="hero-scroll-dot"></span>
+    </a>
+  </section>
+
+  <section class="section about" id="sobre-nosotros">
+    <div class="container about-grid">
+      <div class="about-art" data-reveal>
+        <img class="owners-photo" src="dueños.jpeg" alt="Dueños de Gomilandia">
+        <img class="owners-photo" src="dueños2.jpeg" alt="Dueños de Gomilandia, segunda foto">
+        <img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NjAgNDAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iYTEiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRjlCQzAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjREOEQiLz48L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9ImEyIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZERThBIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZDNTQyIi8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0Q0RjA3OSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzlDRDMyOCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iYTQiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNDOUE4RkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5QjZCRkYiLz48L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxjaXJjbGUgY3g9IjIzMCIgY3k9IjIwMCIgcj0iMTgwIiBmaWxsPSIjRjRGRkU4Ii8+CjxjaXJjbGUgY3g9IjkwIiBjeT0iMTEwIiByPSI0MCIgZmlsbD0iI0ZGNEQ4RCIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjExMCIgcj0iMjQiIGZpbGw9IiNGRjlCQzAiLz4KPGNpcmNsZSBjeD0iMzgwIiBjeT0iMTIwIiByPSIzNCIgZmlsbD0iI0ZGQzU0MiIvPgo8Y2lyY2xlIGN4PSIzODAiIGN5PSIxMjAiIHI9IjIwIiBmaWxsPSIjRkZFMDhBIi8+CjxjaXJjbGUgY3g9IjEyMCIgY3k9IjMzMCIgcj0iMzAiIGZpbGw9IiM5Q0QzMjgiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iMzMwIiByPSIxNyIgZmlsbD0iI0NERUY3RSIvPgo8Y2lyY2xlIGN4PSIzNjAiIGN5PSIzMjAiIHI9IjM2IiBmaWxsPSIjOUI2QkZGIi8+CjxjaXJjbGUgY3g9IjM2MCIgY3k9IjMyMCIgcj0iMjEiIGZpbGw9IiNDOUE4RkYiLz4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUwLDEyMCkiPjxnIHRyYW5zZm9ybT0ic2NhbGUoMS4wNSkiPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNzIiIHJ4PSI2OCIgcnk9IjE1IiBmaWxsPSIjRkY0RDhEIiBvcGFjaXR5PSIwLjE4Ii8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2ExKSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjYTEpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjYTEpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2ExKSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjYTEpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjYTEpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2ExKSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjYTEpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz48ZWxsaXBzZSBjeD0iODQiIGN5PSI1MiIgcng9IjkiIHJ5PSI3IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjUiLz48L2c+PC9nPgo8L3N2Zz4=" alt="Frutas y gomitas naturales de Gomilandia">
+      </div>
+      <div class="about-text">
+        <span class="section-tag" data-reveal data-i18n="about.tag">Nuestra historia</span>
+        <h2 class="section-title" data-reveal><span data-i18n="about.title1">Nacimos para</span> <span class="text-berry" data-i18n="about.title2">naturalizar las gomitas</span></h2>
+        <p data-reveal data-i18n="about.p1">Hace un tiempo comenzó la idea de crear nuestro emprendimiento. Al principio pensamos en muchas opciones, buscamos diferentes ideas y hasta tuvimos varios nombres para nuestra marca. Después de analizar cada uno, el que más nos llamó la atención fue Gomilandia, porque transmite un lugar lleno de sabor, color, diversión y dulces momentos.</p>
+        <p data-reveal data-i18n="about.p2">Gomilandia está conformada por Durán, Lopera, Juan José Escobar y Angie Paola Zapata. Juntos decidimos crear gomitas porque queríamos ofrecer un producto diferente, elaborado con fruta natural y con un sabor delicioso que gustara a todas las personas.</p>
+        <p data-reveal data-i18n="about.p3">Desde ese momento empezamos a investigar, planear y trabajar en equipo para convertir nuestra idea en realidad. Pensamos en los sabores, la presentación y cada detalle para que Gomilandia no fuera solo una marca de gomitas, sino un emprendimiento hecho con creatividad, dedicación y mucho entusiasmo. Hoy Gomilandia representa el esfuerzo y el compromiso de nuestro equipo, y esperamos seguir creciendo y endulzando muchos momentos con nuestras gomitas.</p>
+        <div class="values">
+          <div class="value" data-reveal>
+            <span class="value-ic ic-leaf" aria-hidden="true"></span>
+            <h3 data-i18n="about.v1t">100% fruta real</h3>
+            <p data-i18n="about.v1d">Elaboradas con jugo de frutas frescas, sin esencias artificiales.</p>
+          </div>
+          <div class="value" data-reveal>
+            <span class="value-ic ic-paint" aria-hidden="true"></span>
+            <h3 data-i18n="about.v2t">Colores naturales</h3>
+            <p data-i18n="about.v2d">Toda la magia del color viene de la propia fruta y los vegetales.</p>
+          </div>
+          <div class="value" data-reveal>
+            <span class="value-ic ic-heart" aria-hidden="true"></span>
+            <h3 data-i18n="about.v3t">Hechas con amor</h3>
+            <p data-i18n="about.v3d">Pequeñas recetas honestas, pensadas para toda la familia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section plan-section" id="plano">
+    <div class="container plan-layout">
+      <figure class="plan-visual" data-reveal>
+        <img src="plano.jpeg" alt="Plano de la empresa Gomilandia">
+      </figure>
+      <div class="plan-copy" data-reveal>
+        <span class="section-tag">Nuestra visión</span>
+        <h2 class="section-title">Plano de nuestra empresa Gomilandia</h2>
+        <p>Este plano representa cómo imaginamos la empresa Gomilandia en un futuro. En él organizamos las diferentes áreas que serían necesarias para el funcionamiento de la empresa, como la recepción, el almacenamiento de materias primas, la zona de producción, el empaque, las oficinas, los baños y el parqueadero.</p>
+        <p>La distribución de estos espacios busca que el proceso de elaboración y comercialización de las gomitas sea más organizado, seguro y eficiente. Con este diseño mostramos nuestra visión de crecimiento y cómo esperamos que Gomilandia se convierta en una empresa bien estructurada y preparada para ofrecer productos de calidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section products" id="productos">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <span class="section-tag" data-i18n="products.tag">Nuestro producto</span>
+        <h2 class="section-title"><span data-i18n="products.title1">Un solo producto,</span> <span class="text-berry" data-i18n="products.title2">muchos sabores</span></h2>
+        <p class="section-sub" data-i18n="products.subtitle">Nuestras gomitas frutales vienen en un solo formato pensado para todos: Gomilandia Frutas Surtidas. Elige tu sabor favorito.</p>
+        <div class="product-note"><span class="product-note-dot"></span><span data-i18n="products.note">Gomilandia Frutas Surtidas — Gomitas frutales naturales</span></div>
+      </header>
+      <div class="flavors-grid" id="flavors-grid" data-reveal></div>
+      <figure class="nutrition-info" data-reveal>
+        <img src="info.jpeg" alt="Información nutricional de Gomilandia">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <span class="section-tag" data-i18n="gallery.tag">Galería</span>
+        <h2 class="section-title"><span data-i18n="gallery.title1">Momentos dulces</span> <span class="text-sun" data-i18n="gallery.title2">de Gomilandia</span></h2>
+        <p class="section-sub" data-i18n="gallery.subtitle">Un vistazo a nuestras gomitas, nuestros sabores y los momentos felices que compartimos en las redes.</p>
+      </header>
+      <figure class="presentation-photo" data-reveal>
+        <img src="pres.jpeg" alt="Presentación de las gomitas Gomilandia">
+      </figure>
+      <div class="gallery-grid">
+        <figure class="gallery-item" data-reveal><img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJneCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkE5QzMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjVDOEEiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRkZFMUVDIi8+CjxjaXJjbGUgY3g9IjMwMCIgY3k9IjIyNSIgcj0iMTUwIiBmaWxsPSIjRkZBOUMzIiBvcGFjaXR5PSIwLjUiLz4KPGNpcmNsZSBjeD0iMTEwIiBjeT0iOTAiIHI9IjMwIiBmaWxsPSIjRkY3QUE4Ii8+CjxjaXJjbGUgY3g9IjQ5MCIgY3k9IjExMCIgcj0iMjQiIGZpbGw9IiNGRjdBQTgiLz4KPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzYwIiByPSIyMiIgZmlsbD0iI0ZGN0FBOCIvPgo8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNTAiIHI9IjI4IiBmaWxsPSIjRkY3QUE4Ii8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1MCwxNTApIj48ZyB0cmFuc2Zvcm09InNjYWxlKDEuMTUpIj48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTcyIiByeD0iNjgiIHJ5PSIxNSIgZmlsbD0iI0ZGNUM4QSIgb3BhY2l0eT0iMC4yIi8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2d4KSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMyIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+Cjwvc3ZnPg==" alt="Gomilandia sabor fresa"><figcaption class="gallery-caption"><span class="gallery-name" data-i18n="fresa.name">Fresa</span><span data-i18n="gallery.alt1">Gomitas con jugo real de fresa</span></figcaption></figure>
+        <figure class="gallery-item" data-reveal><img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJneCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkMyOEEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjhDM0IiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRkZFQkQ2Ii8+CjxjaXJjbGUgY3g9IjMwMCIgY3k9IjIyNSIgcj0iMTUwIiBmaWxsPSIjRkZDMjhBIiBvcGFjaXR5PSIwLjUiLz4KPGNpcmNsZSBjeD0iMTEwIiBjeT0iOTAiIHI9IjMwIiBmaWxsPSIjRkZBOTZCIi8+CjxjaXJjbGUgY3g9IjQ5MCIgY3k9IjExMCIgcj0iMjQiIGZpbGw9IiNGRkE5NkIiLz4KPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzYwIiByPSIyMiIgZmlsbD0iI0ZGQTk2QiIvPgo8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNTAiIHI9IjI4IiBmaWxsPSIjRkZBOTZCIi8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1MCwxNTApIj48ZyB0cmFuc2Zvcm09InNjYWxlKDEuMTUpIj48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTcyIiByeD0iNjgiIHJ5PSIxNSIgZmlsbD0iI0ZGOEMzQiIgb3BhY2l0eT0iMC4yIi8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2d4KSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMyIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+Cjwvc3ZnPg==" alt="Gomilandia sabor naranja"><figcaption class="gallery-caption"><span class="gallery-name" data-i18n="naranja.name">Naranja</span><span data-i18n="gallery.alt2">Frescas y cítricas</span></figcaption></figure>
+        <figure class="gallery-item" data-reveal><img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJneCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkU4OUEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkQyM0YiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRkZGNkQ2Ii8+CjxjaXJjbGUgY3g9IjMwMCIgY3k9IjIyNSIgcj0iMTUwIiBmaWxsPSIjRkZFODlBIiBvcGFjaXR5PSIwLjUiLz4KPGNpcmNsZSBjeD0iMTEwIiBjeT0iOTAiIHI9IjMwIiBmaWxsPSIjRkZFMDcwIi8+CjxjaXJjbGUgY3g9IjQ5MCIgY3k9IjExMCIgcj0iMjQiIGZpbGw9IiNGRkUwNzAiLz4KPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzYwIiByPSIyMiIgZmlsbD0iI0ZGRTA3MCIvPgo8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNTAiIHI9IjI4IiBmaWxsPSIjRkZFMDcwIi8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1MCwxNTApIj48ZyB0cmFuc2Zvcm09InNjYWxlKDEuMTUpIj48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTcyIiByeD0iNjgiIHJ5PSIxNSIgZmlsbD0iI0ZGRDIzRiIgb3BhY2l0eT0iMC4yIi8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2d4KSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMyIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+Cjwvc3ZnPg==" alt="Gomilandia sabor limón"><figcaption class="gallery-caption"><span class="gallery-name" data-i18n="limon.name">Limón</span><span data-i18n="gallery.alt3">Ácidas y refrescantes</span></figcaption></figure>
+        <figure class="gallery-item" data-reveal><img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJneCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNDREVGN0UiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5Q0QzMjgiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRUZGOUM5Ii8+CjxjaXJjbGUgY3g9IjMwMCIgY3k9IjIyNSIgcj0iMTUwIiBmaWxsPSIjQ0RFRjdFIiBvcGFjaXR5PSIwLjUiLz4KPGNpcmNsZSBjeD0iMTEwIiBjeT0iOTAiIHI9IjMwIiBmaWxsPSIjQjRERTQ1Ii8+CjxjaXJjbGUgY3g9IjQ5MCIgY3k9IjExMCIgcj0iMjQiIGZpbGw9IiNCNERFNDUiLz4KPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzYwIiByPSIyMiIgZmlsbD0iI0I0REU0NSIvPgo8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNTAiIHI9IjI4IiBmaWxsPSIjQjRERTQ1Ii8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1MCwxNTApIj48ZyB0cmFuc2Zvcm09InNjYWxlKDEuMTUpIj48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTcyIiByeD0iNjgiIHJ5PSIxNSIgZmlsbD0iIzlDRDMyOCIgb3BhY2l0eT0iMC4yIi8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2d4KSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMyIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+Cjwvc3ZnPg==" alt="Gomilandia sabor manzana verde"><figcaption class="gallery-caption"><span class="gallery-name" data-i18n="manzana.name">Manzana verde</span><span data-i18n="gallery.alt4">El dulzor de la manzana</span></figcaption></figure>
+        <figure class="gallery-item" data-reveal><img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJneCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNDOUE4RkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5QjZCRkYiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRjBFN0ZGIi8+CjxjaXJjbGUgY3g9IjMwMCIgY3k9IjIyNSIgcj0iMTUwIiBmaWxsPSIjQzlBOEZGIiBvcGFjaXR5PSIwLjUiLz4KPGNpcmNsZSBjeD0iMTEwIiBjeT0iOTAiIHI9IjMwIiBmaWxsPSIjQjc4QkZGIi8+CjxjaXJjbGUgY3g9IjQ5MCIgY3k9IjExMCIgcj0iMjQiIGZpbGw9IiNCNzhCRkYiLz4KPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzYwIiByPSIyMiIgZmlsbD0iI0I3OEJGRiIvPgo8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNTAiIHI9IjI4IiBmaWxsPSIjQjc4QkZGIi8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1MCwxNTApIj48ZyB0cmFuc2Zvcm09InNjYWxlKDEuMTUpIj48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTcyIiByeD0iNjgiIHJ5PSIxNSIgZmlsbD0iIzlCNkJGRiIgb3BhY2l0eT0iMC4yIi8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2d4KSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMyIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+Cjwvc3ZnPg==" alt="Gomilandia sabor uva"><figcaption class="gallery-caption"><span class="gallery-name" data-i18n="uva.name">Uva</span><span data-i18n="gallery.alt5">Suaves y profundas</span></figcaption></figure>
+        <figure class="gallery-item" data-reveal><img src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDUwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJneCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkQ5OEEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkIwMkUiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDUwIiBmaWxsPSIjRkZGMEQ2Ii8+CjxjaXJjbGUgY3g9IjMwMCIgY3k9IjIyNSIgcj0iMTUwIiBmaWxsPSIjRkZEOThBIiBvcGFjaXR5PSIwLjUiLz4KPGNpcmNsZSBjeD0iMTEwIiBjeT0iOTAiIHI9IjMwIiBmaWxsPSIjRkZDNTVFIi8+CjxjaXJjbGUgY3g9IjQ5MCIgY3k9IjExMCIgcj0iMjQiIGZpbGw9IiNGRkM1NUUiLz4KPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzYwIiByPSIyMiIgZmlsbD0iI0ZGQzU1RSIvPgo8Y2lyY2xlIGN4PSI0NzAiIGN5PSIzNTAiIHI9IjI4IiBmaWxsPSIjRkZDNTVFIi8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1MCwxNTApIj48ZyB0cmFuc2Zvcm09InNjYWxlKDEuMTUpIj48ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTcyIiByeD0iNjgiIHJ5PSIxNSIgZmlsbD0iI0ZGQjAyRSIgb3BhY2l0eT0iMC4yIi8+PGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2d4KSIvPjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZ3gpIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2d4KSIvPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZ3gpIi8+PGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMyIvPjxlbGxpcHNlIGN4PSI4NCIgY3k9IjUyIiByeD0iOSIgcnk9IjciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNSIvPjwvZz48L2c+Cjwvc3ZnPg==" alt="Gomilandia sabor mango"><figcaption class="gallery-caption"><span class="gallery-name" data-i18n="mango.name">Mango</span><span data-i18n="gallery.alt6">Un paseo tropical</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials" id="testimonios">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <span class="section-tag" data-i18n="testimonials.tag">Testimonios</span>
+        <h2 class="section-title"><span data-i18n="testimonials.title1">Familias felices,</span> <span class="text-berry" data-i18n="testimonials.title2">niños contentos</span></h2>
+        <p class="section-sub" data-i18n="testimonials.subtitle">Esto es lo que papás, mamás y peques nos cuentan después de probar nuestras gomitas.</p>
+      </header>
+      <div class="t-slider" data-reveal>
+        <div class="t-track" id="t-track"></div>
+        <div class="t-controls">
+          <button class="t-arrow" id="t-prev" type="button" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="t-dots" id="t-dots"></div>
+          <button class="t-arrow" id="t-next" type="button" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <span class="section-tag" data-i18n="contact.tag">Contacto</span>
+        <h2 class="section-title"><span data-i18n="contact.title1">¡Escríbenos,</span> <span class="text-berry" data-i18n="contact.title2">queremos saludarte!</span></h2>
+        <p class="section-sub" data-i18n="contact.subtitle">¿Dudas, pedidos o solo quieres saludar? Cuéntanos y te respondemos por WhatsApp.</p>
+      </header>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form" data-reveal novalidate>
+          <div class="field">
+            <label class="field-label" for="c-name" data-i18n="contact.nameLabel">Tu nombre</label>
+            <input class="field-input" type="text" id="c-name" name="name" placeholder="" required>
+          </div>
+          <div class="field">
+            <label class="field-label" for="c-email" data-i18n="contact.emailLabel">Tu correo (opcional)</label>
+            <input class="field-input" type="email" id="c-email" name="email" placeholder="">
+          </div>
+          <div class="field">
+            <label class="field-label" for="c-message" data-i18n="contact.messageLabel">Tu mensaje</label>
+            <textarea class="field-input" id="c-message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-pill btn-berry btn-lg form-submit" type="submit">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 12l10-5-4 9-2-4-4-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 16l3.5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span data-i18n="contact.sendLabel">Enviar por WhatsApp</span>
+          </button>
+          <p class="form-note" data-i18n="contact.responseNote">Respondemos de lunes a sábado, siempre con una sonrisa.</p>
+        </form>
+        <div class="contact-info" data-reveal>
+          <div class="info-card">
+            <h3 data-i18n="contact.directLabel">WhatsApp directo</h3>
+            <a class="info-whatsapp" id="contact-whatsapp" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.6 14.2c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a14 14 0 01-1.6-.6 11.6 11.6 0 01-5-4.5 5.6 5.6 0 01-.9-2.5 3.3 3.3 0 011-2.3c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7-.4.5a.8.8 0 00-.1.7 7.4 7.4 0 001.4 1.9 8 8 0 002 1.3c.3.2.6.1.8-.1l.8-1c.2-.3.5-.2.8-.1l2 1c.3.2.5.3.5.5a2 2 0 01-.2 1z"/></svg>
+              <span id="contact-whatsapp-text">Escribir ahora</span>
+            </a>
+            <div class="info-divider"></div>
+            <h3 data-i18n="contact.socialTitle">Síguenos en redes</h3>
+            <div class="socials">
+              <a class="social-link instagram" id="social-instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></svg>
+              </a>
+              <a class="social-link tiktok" id="social-tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.4 2.1 1.7 3.6 3.9 3.9v3c-1.5 0-2.9-.5-3.9-1.3v6.2a6.1 6.1 0 11-6.1-6.1c.3 0 .7 0 1 .1v3.1a3 3 0 102.1 2.9V3h3z"/></svg>
+              </a>
+              <a class="social-link whatsapp" id="social-whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.6 14.2c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a14 14 0 01-1.6-.6 11.6 11.6 0 01-5-4.5 5.6 5.6 0 01-.9-2.5 3.3 3.3 0 011-2.3c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7-.4.5a.8.8 0 00-.1.7 7.4 7.4 0 001.4 1.9 8 8 0 002 1.3c.3.2.6.1.8-.1l.8-1c.2-.3.5-.2.8-.1l2 1c.3.2.5.3.5.5a2 2 0 01-.2 1z"/></svg>
+              </a>
+            </div>
+            <p class="info-note" data-i18n="contact.followNote">Compartimos recetas, sorpresas y mucho color en Instagram y TikTok.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" id="preguntas">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <span class="section-tag" data-i18n="faq.tag">Preguntas frecuentes</span>
+        <h2 class="section-title"><span data-i18n="faq.title1">Lo que nos preguntan</span> <span class="text-sun" data-i18n="faq.title2">los papás</span></h2>
+        <p class="section-sub" data-i18n="faq.subtitle">Resolvemos tus dudas sobre nuestras gomitas naturales.</p>
+      </header>
+      <div class="faq-list" id="faq-list" data-reveal></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#inicio">
+        <img class="brand-logo" src="data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJsZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRjlCQzAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjREOEQiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSIxODQiIGhlaWdodD0iMTg0IiByeD0iNDYiIGZpbGw9InVybCgjbGcpIi8+CjxjaXJjbGUgY3g9IjcyIiBjeT0iMTY0IiByPSIxNSIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE2NCIgcj0iMTUiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTMwIiByeD0iNDciIHJ5PSI0MCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjU1IiBjeT0iMTAyIiByPSIxNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjE0NSIgY3k9IjEwMiIgcj0iMTciIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8Y2lyY2xlIGN4PSI4MCIgY3k9IjQ0IiByPSIxNiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxjaXJjbGUgY3g9IjEyMCIgY3k9IjQ0IiByPSIxNiIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI2OCIgcng9IjMyIiByeT0iMjkiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPgo8ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTI0IiByeD0iMTQiIHJ5PSIxMCIgZmlsbD0iI0ZGOUJDMCIgb3BhY2l0eT0iMC41NSIvPgo8ZWxsaXBzZSBjeD0iODUiIGN5PSI1NCIgcng9IjgiIHJ5PSI2IiBmaWxsPSIjRkY5QkMwIiBvcGFjaXR5PSIwLjUiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjEzMCIgcng9IjIyIiByeT0iMTciIGZpbGw9IiNGRjlCQzAiIG9wYWNpdHk9IjAuNCIvPgo8L3N2Zz4=" alt="Logo Gomilandia">
+        <span class="brand-name">Gomilandia</span>
+      </a>
+      <p class="footer-tagline" data-i18n="footer.tagline">Gomitas frutales naturales, hechas con fruta de verdad y pensadas para toda la familia.</p>
+      <div class="footer-socials">
+        <a class="social-link instagram" href="#" id="footer-instagram" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></svg>
+        </a>
+        <a class="social-link tiktok" href="#" id="footer-tiktok" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.4 2.1 1.7 3.6 3.9 3.9v3c-1.5 0-2.9-.5-3.9-1.3v6.2a6.1 6.1 0 11-6.1-6.1c.3 0 .7 0 1 .1v3.1a3 3 0 102.1 2.9V3h3z"/></svg>
+        </a>
+        <a class="social-link whatsapp" href="#" id="footer-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.6 14.2c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a14 14 0 01-1.6-.6 11.6 11.6 0 01-5-4.5 5.6 5.6 0 01-.9-2.5 3.3 3.3 0 011-2.3c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7-.4.5a.8.8 0 00-.1.7 7.4 7.4 0 001.4 1.9 8 8 0 002 1.3c.3.2.6.1.8-.1l.8-1c.2-.3.5-.2.8-.1l2 1c.3.2.5.3.5.5a2 2 0 01-.2 1z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-title" data-i18n="footer.quickTitle">Navegación</h4>
+      <ul class="footer-links">
+        <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="#sobre-nosotros" data-i18n="nav.about">Sobre nosotros</a></li>
+        <li><a href="#productos" data-i18n="nav.products">Productos</a></li>
+        <li><a href="#galeria" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="#preguntas" data-i18n="nav.faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-title" data-i18n="footer.contactTitle">Contacto</h4>
+      <ul class="footer-links footer-contact">
+        <li><a href="#" id="footer-wa-contact" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#contacto" data-i18n="contact.directLabel">WhatsApp directo</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="year"></span> Gomilandia. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <p class="footer-made" data-i18n="footer.made">Hecho con mucho cariño y jugo de fruta.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" id="whatsapp-float" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.6 14.2c-.2.7-1.3 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a14 14 0 01-1.6-.6 11.6 11.6 0 01-5-4.5 5.6 5.6 0 01-.9-2.5 3.3 3.3 0 011-2.3c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7-.4.5a.8.8 0 00-.1.7 7.4 7.4 0 001.4 1.9 8 8 0 002 1.3c.3.2.6.1.8-.1l.8-1c.2-.3.5-.2.8-.1l2 1c.3.2.5.3.5.5a2 2 0 01-.2 1z"/></svg>
+  <span class="wa-pulse" aria-hidden="true"></span>
+</a>
+
+<div class="modal" id="product-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+  <div class="modal-card">
+    <button class="modal-close" id="modal-close" type="button" aria-label="Cerrar">&times;</button>
+    <div class="modal-body">
+      <div class="modal-img" id="modal-img"></div>
+      <div class="modal-info">
+        <span class="modal-chip" data-i18n="modal.productLine">Gomilandia Frutas Surtidas</span>
+        <span class="modal-flavor-label" data-i18n="modal.saborLabel">Sabor</span>
+        <h3 class="modal-title" id="modal-name">Fresa</h3>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-ing-box">
+          <h4 class="modal-ing-title" data-i18n="modal.ingredientsLabel">Ingredientes</h4>
+          <p class="modal-ing" id="modal-ing"></p>
+        </div>
+        <div class="modal-actions">
+          <a class="btn btn-pill btn-berry btn-lg modal-order" id="modal-order" href="#" target="_blank" rel="noopener" data-i18n="modal.orderLabel">Pide por WhatsApp</a>
+          <div class="modal-badges">
+            <span class="flavor-chip chip-lime" data-i18n="modal.vegan">Vegano</span>
+            <span class="flavor-chip chip-sun" data-i18n="modal.natural">Sin colorantes artificiales</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.brand-logo').forEach((logo) => {
+  logo.src = 'logo.jpeg';
+});
+
+/* ==========================================================================
+   GOMILANDIA — main.js
+   Configuración, multidioma (ES/EN/PT), productos por sabores, testimonios,
+   FAQ, modal, menú móvil y contacto vía WhatsApp.
+   ========================================================================== */
+
+/* ------------------------------------------------------------------
+   CONFIG — Aquí se actualizan los datos de contacto y redes sociales.
+   Cuando tengas tu número y tus cuentas, cámbialos solo en este lugar.
+   ------------------------------------------------------------------ */
+const CONFIG = {
+  WHATSAPP_NUMBER: "573116726984",
+  WHATSAPP_MESSAGE: {
+    es: "Hola Gomilandia! Quiero hacer un pedido de gomitas.",
+    en: "Hi Gomilandia! I would like to order some gummies.",
+    pt: "Ola Gomilandia! Quero fazer um pedido de gomas.",
+  },
+  INSTAGRAM_URL: "https://instagram.com/tu_usuario",
+  TIKTOK_URL: "https://tiktok.com/@tu_usuario",
+};
+
+/* ------------------------------------------------------------------
+   IDIOMAS
+   ------------------------------------------------------------------ */
+const I18N = {
+  es: {
+    "nav.home": "Inicio",
+    "nav.about": "Sobre nosotros",
+    "nav.products": "Productos",
+    "nav.gallery": "Galería",
+    "nav.testimonials": "Testimonios",
+    "nav.contact": "Contacto",
+    "nav.faq": "Preguntas frecuentes",
+    "nav.buyNow": "Pide por WhatsApp",
+    "hero.badge": "100% frutas, 0% artificiales",
+    "hero.title1": "Las gomitas más naturales",
+    "hero.title2": "y las más deliciosas",
+    "hero.subtitle": "Gomilandia nació para naturalizar las gomitas. Hacemos gomitas frutales con jugo de fruta real, pectina natural y cero colorantes artificiales. Divertidas para los niños, honestas para los papás.",
+    "hero.cta1": "Ver productos",
+    "hero.cta2": "Conoce nuestra historia",
+    "hero.p1t": "Jugo de fruta real",
+    "hero.p1d": "Nada de sabores artificiales",
+    "hero.p2t": "Color de la naturaleza",
+    "hero.p2d": "Sin colorantes artificiales",
+    "hero.p3t": "Hechas con amor",
+    "hero.p3d": "Pectina natural y mucha fruta",
+    "about.tag": "Nuestra historia",
+    "about.title1": "Nacimos para",
+    "about.title2": "naturalizar las gomitas",
+    "about.p1": "Todo empezó con una idea muy simple: las gomitas eran demasiado artificiales. Colorantes de laboratorio, sabores que no se parecían a ninguna fruta real y una lista de ingredientes imposible de leer.",
+    "about.p2": "Por eso decidimos naturalizarlas. En Gomilandia creemos que las gomitas pueden ser coloridas sin ser artificiales: nuestros colores nacen de la propia fruta, nuestro sabor viene del jugo real y nuestra textura se consigue con pectina natural de frutas.",
+    "about.p3": "Hoy somos gomitas frutales hechas para niños que se divierten con cada bocado y para papás que pueden leer los ingredientes con una sonrisa. Bienvenidos a Gomilandia, donde las gomitas vuelven a saber a fruta.",
+    "about.v1t": "100% fruta real",
+    "about.v1d": "Elaboradas con jugo de frutas frescas, sin esencias artificiales.",
+    "about.v2t": "Colores naturales",
+    "about.v2d": "Toda la magia del color viene de la propia fruta y los vegetales.",
+    "about.v3t": "Hechas con amor",
+    "about.v3d": "Pequeñas recetas honestas, pensadas para toda la familia.",
+    "products.tag": "Nuestro producto",
+    "products.title1": "Un solo producto,",
+    "products.title2": "muchos sabores",
+    "products.subtitle": "Nuestras gomitas frutales vienen en un solo formato pensado para todos: Gomilandia Frutas Surtidas. Elige tu sabor favorito.",
+    "products.note": "Gomilandia Frutas Surtidas — Gomitas frutales naturales",
+    "products.saborLabel": "Sabor",
+    "products.detailsLabel": "Ver detalles",
+    "products.vegan": "Vegano",
+    "gallery.tag": "Galería",
+    "gallery.title1": "Momentos dulces",
+    "gallery.title2": "de Gomilandia",
+    "gallery.subtitle": "Un vistazo a nuestras gomitas, nuestros sabores y los momentos felices que compartimos en las redes.",
+    "gallery.alt1": "Gomitas con jugo real de fresa",
+    "gallery.alt2": "Frescas y cítricas",
+    "gallery.alt3": "Ácidas y refrescantes",
+    "gallery.alt4": "El dulzor de la manzana",
+    "gallery.alt5": "Suaves y profundas",
+    "gallery.alt6": "Un paseo tropical",
+    "testimonials.tag": "Testimonios",
+    "testimonials.title1": "Familias felices,",
+    "testimonials.title2": "niños contentos",
+    "testimonials.subtitle": "Esto es lo que papás, mamás y peques nos cuentan después de probar nuestras gomitas.",
+    "contact.tag": "Contacto",
+    "contact.title1": "¡Escríbenos,",
+    "contact.title2": "queremos saludarte!",
+    "contact.subtitle": "¿Dudas, pedidos o solo quieres saludar? Cuéntanos y te respondemos por WhatsApp.",
+    "contact.nameLabel": "Tu nombre",
+    "contact.emailLabel": "Tu correo (opcional)",
+    "contact.messageLabel": "Tu mensaje",
+    "contact.sendLabel": "Enviar por WhatsApp",
+    "contact.responseNote": "Respondemos de lunes a sábado, siempre con una sonrisa.",
+    "contact.directLabel": "WhatsApp directo",
+    "contact.waCta": "Escribir ahora",
+    "contact.socialTitle": "Síguenos en redes",
+    "contact.followNote": "Compartimos recetas, sorpresas y mucho color en Instagram y TikTok.",
+    "faq.tag": "Preguntas frecuentes",
+    "faq.title1": "Lo que nos preguntan",
+    "faq.title2": "los papás",
+    "faq.subtitle": "Resolvemos tus dudas sobre nuestras gomitas naturales.",
+    "footer.tagline": "Gomitas frutales naturales, hechas con fruta de verdad y pensadas para toda la familia.",
+    "footer.quickTitle": "Navegación",
+    "footer.contactTitle": "Contacto",
+    "footer.rights": "Todos los derechos reservados.",
+    "footer.made": "Hecho con mucho cariño y jugo de fruta.",
+    "modal.productLine": "Gomilandia Frutas Surtidas",
+    "modal.saborLabel": "Sabor",
+    "modal.ingredientsLabel": "Ingredientes",
+    "modal.orderLabel": "Pide por WhatsApp",
+    "modal.vegan": "Vegano",
+    "modal.natural": "Sin colorantes artificiales",
+    "fresa.name": "Fresa",
+    "frambuesa.name": "Frambuesa",
+    "naranja.name": "Naranja",
+    "limon.name": "Limón",
+    "manzana.name": "Manzana verde",
+    "uva.name": "Uva",
+    "mango.name": "Mango",
+    "arandano.name": "Arándano",
+  },
+  en: {
+    "nav.home": "Home",
+    "nav.about": "About us",
+    "nav.products": "Products",
+    "nav.gallery": "Gallery",
+    "nav.testimonials": "Testimonials",
+    "nav.contact": "Contact",
+    "nav.faq": "FAQ",
+    "nav.buyNow": "Order on WhatsApp",
+    "hero.badge": "100% fruit, 0% artificial",
+    "hero.title1": "The most natural gummies,",
+    "hero.title2": "and the tastiest",
+    "hero.subtitle": "Gomilandia was born to make gummies natural again. We make fruit gummies with real fruit juice, natural pectin and zero artificial colors. Fun for kids, honest for parents.",
+    "hero.cta1": "See products",
+    "hero.cta2": "Our story",
+    "hero.p1t": "Real fruit juice",
+    "hero.p1d": "No artificial flavors",
+    "hero.p2t": "Color from nature",
+    "hero.p2d": "No artificial colors",
+    "hero.p3t": "Made with love",
+    "hero.p3d": "Natural pectin and lots of fruit",
+    "about.tag": "Our story",
+    "about.title1": "Born to make gummies",
+    "about.title2": "natural again",
+    "about.p1": "It all started with a very simple idea: gummies were too artificial. Lab-made colors, flavors that didn't taste like any real fruit, and an ingredient list you couldn't read.",
+    "about.p2": "So we decided to naturalize them. At Gomilandia we believe gummies can be colorful without being artificial: our colors come from the fruit itself, our flavor comes from real juice and our texture comes from natural fruit pectin.",
+    "about.p3": "Today we make fruit gummies for kids who enjoy every bite and for parents who can read the ingredients with a smile. Welcome to Gomilandia, where gummies taste like fruit again.",
+    "about.v1t": "100% real fruit",
+    "about.v1d": "Made with fresh fruit juice, no artificial essences.",
+    "about.v2t": "Natural colors",
+    "about.v2d": "All the color magic comes from the fruit and vegetables themselves.",
+    "about.v3t": "Made with love",
+    "about.v3d": "Small honest recipes, made for the whole family.",
+    "products.tag": "Our product",
+    "products.title1": "One product,",
+    "products.title2": "many flavors",
+    "products.subtitle": "Our fruit gummies come in one format made for everyone: Gomilandia Assorted Fruits. Pick your favorite flavor.",
+    "products.note": "Gomilandia Assorted Fruits — Natural fruit gummies",
+    "products.saborLabel": "Flavor",
+    "products.detailsLabel": "See details",
+    "products.vegan": "Vegan",
+    "gallery.tag": "Gallery",
+    "gallery.title1": "Sweet moments",
+    "gallery.title2": "from Gomilandia",
+    "gallery.subtitle": "A peek at our gummies, our flavors and the happy moments we share on social media.",
+    "gallery.alt1": "Gummies with real strawberry juice",
+    "gallery.alt2": "Fresh and citrusy",
+    "gallery.alt3": "Tangy and refreshing",
+    "gallery.alt4": "The sweetness of the apple",
+    "gallery.alt5": "Soft and deep",
+    "gallery.alt6": "A tropical trip",
+    "testimonials.tag": "Testimonials",
+    "testimonials.title1": "Happy families,",
+    "testimonials.title2": "happy kids",
+    "testimonials.subtitle": "This is what parents and kids tell us after trying our gummies.",
+    "contact.tag": "Contact",
+    "contact.title1": "Write to us,",
+    "contact.title2": "we'd love to hear from you!",
+    "contact.subtitle": "Questions, orders or just want to say hi? Tell us and we'll reply on WhatsApp.",
+    "contact.nameLabel": "Your name",
+    "contact.emailLabel": "Your email (optional)",
+    "contact.messageLabel": "Your message",
+    "contact.sendLabel": "Send via WhatsApp",
+    "contact.responseNote": "We reply Monday to Saturday, always with a smile.",
+    "contact.directLabel": "Direct WhatsApp",
+    "contact.waCta": "Chat now",
+    "contact.socialTitle": "Follow us",
+    "contact.followNote": "We share recipes, surprises and lots of color on Instagram and TikTok.",
+    "faq.tag": "FAQ",
+    "faq.title1": "What parents",
+    "faq.title2": "ask us",
+    "faq.subtitle": "Answers about our natural gummies.",
+    "footer.tagline": "Natural fruit gummies, made with real fruit and meant for the whole family.",
+    "footer.quickTitle": "Navigation",
+    "footer.contactTitle": "Contact",
+    "footer.rights": "All rights reserved.",
+    "footer.made": "Made with lots of love and fruit juice.",
+    "modal.productLine": "Gomilandia Assorted Fruits",
+    "modal.saborLabel": "Flavor",
+    "modal.ingredientsLabel": "Ingredients",
+    "modal.orderLabel": "Order on WhatsApp",
+    "modal.vegan": "Vegan",
+    "modal.natural": "No artificial colors",
+    "fresa.name": "Strawberry",
+    "frambuesa.name": "Raspberry",
+    "naranja.name": "Orange",
+    "limon.name": "Lemon",
+    "manzana.name": "Green apple",
+    "uva.name": "Grape",
+    "mango.name": "Mango",
+    "arandano.name": "Blueberry",
+  },
+  pt: {
+    "nav.home": "Início",
+    "nav.about": "Sobre nós",
+    "nav.products": "Produtos",
+    "nav.gallery": "Galeria",
+    "nav.testimonials": "Depoimentos",
+    "nav.contact": "Contato",
+    "nav.faq": "Perguntas frequentes",
+    "nav.buyNow": "Peça no WhatsApp",
+    "hero.badge": "100% frutas, 0% artificial",
+    "hero.title1": "As gomas mais naturais",
+    "hero.title2": "e as mais deliciosas",
+    "hero.subtitle": "A Gomilandia nasceu para naturalizar as gomas. Fazemos gomas frutais com suco de fruta de verdade, pectina natural e zero corantes artificiais. Divertidas para as crianças, honestas para os papais.",
+    "hero.cta1": "Ver produtos",
+    "hero.cta2": "Nossa história",
+    "hero.p1t": "Suco de fruta real",
+    "hero.p1d": "Nada de sabores artificiais",
+    "hero.p2t": "Cor da natureza",
+    "hero.p2d": "Sem corantes artificiais",
+    "hero.p3t": "Feitas com amor",
+    "hero.p3d": "Pectina natural e muita fruta",
+    "about.tag": "Nossa história",
+    "about.title1": "Nascemos para",
+    "about.title2": "naturalizar as gomas",
+    "about.p1": "Tudo começou com uma ideia muito simples: as gomas eram artificiais demais. Corantes de laboratório, sabores que não se pareciam com nenhuma fruta real e uma lista de ingredientes impossível de ler.",
+    "about.p2": "Por isso decidimos naturalizá-las. Na Gomilandia acreditamos que as gomas podem ser coloridas sem ser artificiais: nossas cores nascem da própria fruta, nosso sabor vem do suco real e nossa textura é feita com pectina natural de frutas.",
+    "about.p3": "Hoje somos gomas frutais feitas para crianças que se divertem a cada mordida e para papais que podem ler os ingredientes com um sorriso. Bem-vindos à Gomilandia, onde as gomas voltam a ter gosto de fruta.",
+    "about.v1t": "100% fruta real",
+    "about.v1d": "Feitas com suco de frutas frescas, sem essências artificiais.",
+    "about.v2t": "Cores naturais",
+    "about.v2d": "Toda a magia da cor vem da própria fruta e dos vegetais.",
+    "about.v3t": "Feitas com amor",
+    "about.v3d": "Pequenas receitas honestas, pensadas para toda a família.",
+    "products.tag": "Nosso produto",
+    "products.title1": "Um só produto,",
+    "products.title2": "muitos sabores",
+    "products.subtitle": "Nossas gomas frutais vêm em um único formato pensado para todos: Gomilandia Frutas Sortidas. Escolha seu sabor favorito.",
+    "products.note": "Gomilandia Frutas Sortidas — Gomas frutais naturais",
+    "products.saborLabel": "Sabor",
+    "products.detailsLabel": "Ver detalhes",
+    "products.vegan": "Vegano",
+    "gallery.tag": "Galeria",
+    "gallery.title1": "Momentos doces",
+    "gallery.title2": "da Gomilandia",
+    "gallery.subtitle": "Um olhar para as nossas gomas, os nossos sabores e os momentos felizes que compartilhamos nas redes.",
+    "gallery.alt1": "Gomas com suco real de morango",
+    "gallery.alt2": "Frescas e cítricas",
+    "gallery.alt3": "Azedas e refrescantes",
+    "gallery.alt4": "A doçura da maçã",
+    "gallery.alt5": "Suaves e profundas",
+    "gallery.alt6": "Um passeio tropical",
+    "testimonials.tag": "Depoimentos",
+    "testimonials.title1": "Famílias felizes,",
+    "testimonials.title2": "crianças contentes",
+    "testimonials.subtitle": "É o que papais, mamães e pequenos nos contam depois de provar nossas gomas.",
+    "contact.tag": "Contato",
+    "contact.title1": "Escreva para nós,",
+    "contact.title2": "queremos te conhecer!",
+    "contact.subtitle": "Dúvidas, pedidos ou só quer dizer oi? Conte para a gente e responderemos pelo WhatsApp.",
+    "contact.nameLabel": "Seu nome",
+    "contact.emailLabel": "Seu e-mail (opcional)",
+    "contact.messageLabel": "Sua mensagem",
+    "contact.sendLabel": "Enviar pelo WhatsApp",
+    "contact.responseNote": "Respondemos de segunda a sábado, sempre com um sorriso.",
+    "contact.directLabel": "WhatsApp direto",
+    "contact.waCta": "Escrever agora",
+    "contact.socialTitle": "Siga a gente",
+    "contact.followNote": "Compartilhamos receitas, surpresas e muita cor no Instagram e no TikTok.",
+    "faq.tag": "Perguntas frequentes",
+    "faq.title1": "O que os papais",
+    "faq.title2": "perguntam",
+    "faq.subtitle": "Tire suas dúvidas sobre nossas gomas naturais.",
+    "footer.tagline": "Gomas frutais naturais, feitas com fruta de verdade e pensadas para toda a família.",
+    "footer.quickTitle": "Navegação",
+    "footer.contactTitle": "Contato",
+    "footer.rights": "Todos os direitos reservados.",
+    "footer.made": "Feito com muito carinho e suco de fruta.",
+    "modal.productLine": "Gomilandia Frutas Sortidas",
+    "modal.saborLabel": "Sabor",
+    "modal.ingredientsLabel": "Ingredientes",
+    "modal.orderLabel": "Peça pelo WhatsApp",
+    "modal.vegan": "Vegano",
+    "modal.natural": "Sem corantes artificiais",
+    "fresa.name": "Morango",
+    "frambuesa.name": "Framboesa",
+    "naranja.name": "Laranja",
+    "limon.name": "Limão",
+    "manzana.name": "Maçã verde",
+    "uva.name": "Uva",
+    "mango.name": "Manga",
+    "arandano.name": "Mirtilo",
+  },
+};
+
+/* ------------------------------------------------------------------
+   PRODUCTO POR SABORES (un solo producto, 8 sabores)
+   ------------------------------------------------------------------ */
+const FLAVORS = [
+  {
+    id: "fresa", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGQTlDMyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGNUM4QSIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiNGRjVDOEEiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#FF5C8A", soft: "#FFE1EC",
+    name: { es: "Fresa", en: "Strawberry", pt: "Morango" },
+    desc: {
+      es: "El clásico favorito de todos. Gomitas con el sabor dulce y fresco de las fresas de verdad.",
+      en: "The classic everyone loves. Gummies with the sweet, fresh taste of real strawberries.",
+      pt: "O clássico favorito de todos. Gomas com o sabor doce e fresco dos morangos de verdade.",
+    },
+    ing: {
+      es: "Jugo natural de fresa, azúcar de caña, pectina de frutas, agua y colorante natural de remolacha.",
+      en: "Natural strawberry juice, cane sugar, fruit pectin, water and natural beet color.",
+      pt: "Suco natural de morango, açúcar de cana, pectina de frutas, água e corante natural de beterraba.",
+    },
+  },
+  {
+    id: "frambuesa", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGOTNDNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGM0Q4RiIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiNGRjNEOEYiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#FF3D8F", soft: "#FFE0EC",
+    name: { es: "Frambuesa", en: "Raspberry", pt: "Framboesa" },
+    desc: {
+      es: "Intensas, rojas y llenas de sabor. Las frambuesas en su versión más divertida.",
+      en: "Intense, red and full of flavor. Raspberries at their funniest.",
+      pt: "Intensas, vermelhas e cheias de sabor. As framboesas na versão mais divertida.",
+    },
+    ing: {
+      es: "Jugo natural de frambuesa, azúcar de caña, pectina de frutas, agua y colorante natural de remolacha.",
+      en: "Natural raspberry juice, cane sugar, fruit pectin, water and natural beet color.",
+      pt: "Suco natural de framboesa, açúcar de cana, pectina de frutas, água e corante natural de beterraba.",
+    },
+  },
+  {
+    id: "naranja", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGQzI4QSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGOEMzQiIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiNGRjhDM0IiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#FF8C3B", soft: "#FFEBD6",
+    name: { es: "Naranja", en: "Orange", pt: "Laranja" },
+    desc: {
+      es: "Un toque cítrico y jugoso que despierta sonrisas. Sabor a naranjas frescas recién exprimidas.",
+      en: "A juicy, citrusy touch that brings smiles. The taste of freshly squeezed oranges.",
+      pt: "Um toque cítrico e suculento que desperta sorrisos. Sabor de laranjas fresquinhas espremidas.",
+    },
+    ing: {
+      es: "Jugo natural de naranja, azúcar de caña, pectina de frutas, agua y color natural de zanahoria.",
+      en: "Natural orange juice, cane sugar, fruit pectin, water and natural carrot color.",
+      pt: "Suco natural de laranja, açúcar de cana, pectina de frutas, água e cor natural de cenoura.",
+    },
+  },
+  {
+    id: "limon", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRTg5QSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGRDIzRiIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiNGRkQyM0YiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#FFD23F", soft: "#FFF6D6",
+    name: { es: "Limón", en: "Lemon", pt: "Limão" },
+    desc: {
+      es: "Para los más valientes. Gomitas frescas con el sabor ácido y refrescante del limón natural.",
+      en: "For the bravest ones. Fresh gummies with the tangy, refreshing taste of natural lemon.",
+      pt: "Para os mais corajosos. Gomas frescas com o sabor azedo e refrescante do limão natural.",
+    },
+    ing: {
+      es: "Jugo natural de limón, azúcar de caña, pectina de frutas y agua.",
+      en: "Natural lemon juice, cane sugar, fruit pectin and water.",
+      pt: "Suco natural de limão, açúcar de cana, pectina de frutas e água.",
+    },
+  },
+  {
+    id: "manzana", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0NERUY3RSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzlDRDMyOCIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiM5Q0QzMjgiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#9CD328", soft: "#EFF9C9",
+    name: { es: "Manzana verde", en: "Green apple", pt: "Maçã verde" },
+    desc: {
+      es: "Crujientes por dentro y muy dulces por fuera. El sabor ácido-dulce de las manzanas verdes.",
+      en: "Crunchy inside, extra sweet outside. The tangy-sweet taste of green apples.",
+      pt: "Crocantes por dentro e bem doces por fora. O sabor azedo-doce das maçãs verdes.",
+    },
+    ing: {
+      es: "Jugo natural de manzana verde, azúcar de caña, pectina de frutas, agua y color natural de espinaca.",
+      en: "Natural green apple juice, cane sugar, fruit pectin, water and natural spinach color.",
+      pt: "Suco natural de maçã verde, açúcar de cana, pectina de frutas, água e cor natural de espinafre.",
+    },
+  },
+  {
+    id: "uva", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0M5QThGRiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzlCNkJGRiIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiM5QjZCRkYiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#9B6BFF", soft: "#F0E7FF",
+    name: { es: "Uva", en: "Grape", pt: "Uva" },
+    desc: {
+      es: "Un clásico que nunca falla. Gomitas suaves con el sabor profundo de las uvas moradas.",
+      en: "A classic that never fails. Soft gummies with the deep taste of purple grapes.",
+      pt: "Um clássico que nunca falha. Gomas suaves com o sabor profundo das uvas roxas.",
+    },
+    ing: {
+      es: "Jugo natural de uva, azúcar de caña, pectina de frutas y agua.",
+      en: "Natural grape juice, cane sugar, fruit pectin and water.",
+      pt: "Suco natural de uva, açúcar de cana, pectina de frutas e água.",
+    },
+  },
+  {
+    id: "mango", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRDk4QSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGQjAyRSIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiNGRkIwMkUiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#FFB02E", soft: "#FFF0D6",
+    name: { es: "Mango", en: "Mango", pt: "Manga" },
+    desc: {
+      es: "Un paseo tropical en cada gomita. La dulzura dorada del mango maduro.",
+      en: "A tropical trip in every gummy. The golden sweetness of ripe mango.",
+      pt: "Um passeio tropical em cada goma. A doçura dourada da manga madura.",
+    },
+    ing: {
+      es: "Jugo natural de mango, azúcar de caña, pectina de frutas, agua y color natural de mango.",
+      en: "Natural mango juice, cane sugar, fruit pectin, water and natural mango color.",
+      pt: "Suco natural de manga, açúcar de cana, pectina de frutas, água e cor natural de manga.",
+    },
+  },
+  {
+    id: "arandano", img: "data:image/svg+xml;base64,77u/PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0E5QzBGRiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzVCN0ZGRiIvPgo8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE3MiIgcng9IjY4IiByeT0iMTUiIGZpbGw9IiM1QjdGRkYiIG9wYWNpdHk9IjAuMTgiLz4KPGNpcmNsZSBjeD0iNzIiIGN5PSIxODYiIHI9IjE2IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEyOCIgY3k9IjE4NiIgcj0iMTYiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE1MCIgcng9IjUwIiByeT0iNDIiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIxMTgiIHI9IjE5IiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjE0OCIgY3k9IjExOCIgcj0iMTkiIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI0MiIgcj0iMTciIGZpbGw9InVybCgjZykiLz4KPGNpcmNsZSBjeD0iMTIwIiBjeT0iNDIiIHI9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSI3MCIgcng9IjM0IiByeT0iMzEiIGZpbGw9InVybCgjZykiLz4KPGVsbGlwc2UgY3g9IjE1MiIgY3k9IjE0MiIgcng9IjE2IiByeT0iMTEiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuMjgiLz4KPGVsbGlwc2UgY3g9Ijg0IiBjeT0iNTIiIHJ4PSI5IiByeT0iNyIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC41Ii8+CjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIxNTAiIHJ4PSIyNCIgcnk9IjE4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+", color: "#5B7FFF", soft: "#E4ECFF",
+    name: { es: "Arándano", en: "Blueberry", pt: "Mirtilo" },
+    desc: {
+      es: "Pequeñas gomitas con un gran sabor. El dulzor ligeramente ácido de los arándanos.",
+      en: "Tiny gummies with a big taste. The slightly tangy sweetness of blueberries.",
+      pt: "Gominhas pequenas com um sabor enorme. A doçura levemente azeda dos mirtilos.",
+    },
+    ing: {
+      es: "Jugo natural de arándano, azúcar de caña, pectina de frutas, agua y color natural de repollo morado.",
+      en: "Natural blueberry juice, cane sugar, fruit pectin, water and natural purple cabbage color.",
+      pt: "Suco natural de mirtilo, açúcar de cana, pectina de frutas, água e cor natural de repolho roxo.",
+    },
+  },
+];
+
+/* ------------------------------------------------------------------
+   TESTIMONIOS
+   ------------------------------------------------------------------ */
+const TESTIMONIALS = [
+  {
+    name: "María", role: { es: "Mamá de Sofía", en: "Sofía's mom", pt: "Mãe da Sofía" },
+    initial: "M", cls: "a1",
+    quote: {
+      es: "Mi hija ya no quiere las gomitas del supermercado. Le encantan las de fresa y a mí me encanta poder leer los ingredientes y entenderlos.",
+      en: "My daughter doesn't want supermarket gummies anymore. She loves the strawberry ones and I love being able to read and understand the ingredients.",
+      pt: "Minha filha não quer mais as gomas do supermercado. Ela adora as de morango e eu adoro poder ler os ingredientes e entendê-los.",
+    },
+  },
+  {
+    name: "Carlos", role: { es: "Papá de Mateo", en: "Mateo's dad", pt: "Pai do Mateo" },
+    initial: "C", cls: "a2",
+    quote: {
+      es: "Los colores son tan vivos que pensé que eran artificiales. Me encantó saber que todo el color viene de la propia fruta.",
+      en: "The colors were so vivid I thought they were artificial. I loved learning that all the color comes from the fruit itself.",
+      pt: "As cores eram tão vivas que pensei que fossem artificiais. Adorei saber que toda a cor vem da própria fruta.",
+    },
+  },
+  {
+    name: "Valentina", role: { es: "9 años", en: "9 years old", pt: "9 anos" },
+    initial: "V", cls: "a3",
+    quote: {
+      es: "Son las gomitas más suaves que hemos probado y saben increíble. La de mango es mi favorita.",
+      en: "They are the softest gummies we've tried and they taste amazing. Mango is my favorite.",
+      pt: "São as gomas mais macias que já provamos e têm um sabor incrível. A de manga é a minha favorita.",
+    },
+  },
+  {
+    name: "Andrea", role: { es: "Mamá de dos", en: "Mom of two", pt: "Mãe de dois" },
+    initial: "A", cls: "a4",
+    quote: {
+      es: "Ideales para la lonchera. Sin culpas y con mucha fruta de verdad. Repetiremos seguro.",
+      en: "Perfect for the lunchbox. No guilt and plenty of real fruit. We'll definitely order again.",
+      pt: "Perfeitas para a lancheira. Sem culpa e com muita fruta de verdade. Vamos repetir com certeza.",
+    },
+  },
+];
+
+/* ------------------------------------------------------------------
+   PREGUNTAS FRECUENTES
+   ------------------------------------------------------------------ */
+const FAQ = [
+  {
+    q: {
+      es: "¿Las gomitas realmente son naturales?",
+      en: "Are the gummies really natural?",
+      pt: "As gomas são realmente naturais?",
+    },
+    a: {
+      es: "Sí. Nuestras gomitas se hacen con jugo de fruta real, azúcar de caña y pectina natural de frutas. No usamos colorantes ni sabores artificiales: el color y el sabor vienen de la propia fruta.",
+      en: "Yes. Our gummies are made with real fruit juice, cane sugar and natural fruit pectin. We don't use artificial colors or flavors: the color and flavor come from the fruit itself.",
+      pt: "Sim. Nossas gomas são feitas com suco de fruta real, açúcar de cana e pectina natural de frutas. Não usamos corantes nem sabores artificiais: a cor e o sabor vêm da própria fruta.",
+    },
+  },
+  {
+    q: {
+      es: "¿Contienen azúcar?",
+      en: "Do they contain sugar?",
+      pt: "Elas contêm açúcar?",
+    },
+    a: {
+      es: "Sí, contienen azúcar de caña, como cualquier gomita, pero no llevan jarabes ni edulcorantes artificiales. La fruta también aporta su dulzor natural.",
+      en: "Yes, they contain cane sugar, like any gummy, but no artificial syrups or sweeteners. The fruit also brings its own natural sweetness.",
+      pt: "Sim, contêm açúcar de cana, como qualquer goma, mas sem xaropes nem adoçantes artificiais. A fruta também traz sua doçura natural.",
+    },
+  },
+  {
+    q: {
+      es: "¿Son aptas para veganos?",
+      en: "Are they suitable for vegans?",
+      pt: "São adequadas para veganos?",
+    },
+    a: {
+      es: "¡Sí! A diferencia de las gomitas tradicionales, no usamos gelatina de origen animal. Nuestra textura se logra con pectina de frutas, por lo que son 100% de origen vegetal.",
+      en: "Yes! Unlike traditional gummies, we don't use animal-based gelatin. Our texture comes from fruit pectin, so they are 100% plant-based.",
+      pt: "Sim! Ao contrário das gomas tradicionais, não usamos gelatina de origem animal. Nossa textura é feita com pectina de frutas, então elas são 100% de origem vegetal.",
+    },
+  },
+  {
+    q: {
+      es: "¿Contienen gluten o alérgenos?",
+      en: "Do they contain gluten or allergens?",
+      pt: "Contêm glúten ou alérgenos?",
+    },
+    a: {
+      es: "Nuestras gomitas no contienen gluten y están libres de los principales alérgenos. Sin embargo, se producen en un espacio que puede manejar otros ingredientes, así que revisa siempre el empaque.",
+      en: "Our gummies are gluten-free and free from the main allergens. However, they are produced in a facility that may handle other ingredients, so always check the package.",
+      pt: "Nossas gomas não contêm glúten e estão livres dos principais alérgenos. No entanto, são produzidas em um espaço que pode lidar com outros ingredientes, então sempre verifique a embalagem.",
+    },
+  },
+  {
+    q: {
+      es: "¿A partir de qué edad pueden comerlas los niños?",
+      en: "At what age can kids eat them?",
+      pt: "A partir de qual idade as crianças podem comer?",
+    },
+    a: {
+      es: "Están pensadas para niños, pero por su tamaño se recomiendan desde los 3 años y siempre bajo supervisión de un adulto.",
+      en: "They are designed for kids, but because of their size we recommend them from 3 years old and always under adult supervision.",
+      pt: "São feitas para crianças, mas por causa do tamanho recomendamos a partir dos 3 anos e sempre com supervisão de um adulto.",
+    },
+  },
+  {
+    q: {
+      es: "¿Cómo las conservo?",
+      en: "How should I store them?",
+      pt: "Como devo conservá-las?",
+    },
+    a: {
+      es: "Guárdalas en un lugar fresco y seco, en su empaque cerrado. Así se mantienen suaves y deliciosas por mucho más tiempo.",
+      en: "Store them in a cool, dry place in their sealed package. That way they stay soft and delicious for much longer.",
+      pt: "Guarde em local fresco e seco, na embalagem fechada. Assim elas continuam macias e deliciosas por muito mais tempo.",
+    },
+  },
+  {
+    q: {
+      es: "¿Cómo puedo comprarlas o hacer pedidos?",
+      en: "How can I buy them or place an order?",
+      pt: "Como posso comprá-las ou fazer pedidos?",
+    },
+    a: {
+      es: "Escríbenos por WhatsApp o por nuestras redes sociales Instagram y TikTok. Te respondemos y coordinamos tu pedido rapidito.",
+      en: "Message us on WhatsApp or on our social media, Instagram and TikTok. We'll reply and arrange your order in no time.",
+      pt: "Escreva para a gente pelo WhatsApp ou pelas nossas redes sociais, Instagram e TikTok. Respondemos e organizamos seu pedido rapidinho.",
+    },
+  },
+];
+
+/* ------------------------------------------------------------------
+   ESTADO Y UTILIDADES
+   ------------------------------------------------------------------ */
+let lang = localStorage.getItem("gomilandia_lang") || "es";
+const $ = (sel, ctx) => (ctx || document).querySelector(sel);
+const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
+
+const t = (key) => I18N[lang][key] || key;
+
+function waLink(message) {
+  return "https://wa.me/" + CONFIG.WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message || CONFIG.WHATSAPP_MESSAGE[lang]);
+}
+
+/* ------------------------------------------------------------------
+   IDIOMA
+   ------------------------------------------------------------------ */
+function applyLang() {
+  document.documentElement.lang = lang;
+  $$("[data-i18n]").forEach((el) => {
+    el.textContent = t(el.getAttribute("data-i18n"));
+  });
+  $(".lang-btn.active")?.classList.remove("active");
+  $$(".lang-btn").forEach((b) => {
+    if (b.getAttribute("data-lang") === lang) b.classList.add("active");
+  });
+  const waCta = $("#contact-whatsapp-text");
+  if (waCta) waCta.textContent = t("contact.waCta");
+  renderFlavors();
+  renderTestimonials();
+  renderFAQ();
+  refreshWaLinks();
+}
+
+function refreshWaLinks() {
+  const wa = waLink();
+  $("#nav-order")?.setAttribute("href", wa);
+  $("#whatsapp-float")?.setAttribute("href", wa);
+  $("#contact-whatsapp")?.setAttribute("href", wa);
+  $("#social-whatsapp")?.setAttribute("href", wa);
+  $("#footer-whatsapp")?.setAttribute("href", wa);
+  $("#footer-wa-contact")?.setAttribute("href", wa);
+  $("#social-instagram")?.setAttribute("href", CONFIG.INSTAGRAM_URL);
+  $("#footer-instagram")?.setAttribute("href", CONFIG.INSTAGRAM_URL);
+  $("#social-tiktok")?.setAttribute("href", CONFIG.TIKTOK_URL);
+  $("#footer-tiktok")?.setAttribute("href", CONFIG.TIKTOK_URL);
+}
+
+$$(".lang-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    lang = btn.getAttribute("data-lang");
+    localStorage.setItem("gomilandia_lang", lang);
+    applyLang();
+  });
+});
+
+/* ------------------------------------------------------------------
+   PRODUCTOS POR SABORES
+   ------------------------------------------------------------------ */
+function renderFlavors() {
+  const grid = $("#flavors-grid");
+  if (!grid) return;
+  grid.innerHTML = FLAVORS.map((f) => {
+    const name = f.name[lang];
+    return `
+      <article class="flavor-card" style="--fc:${f.color};--fc-soft:${f.soft}" data-id="${f.id}">
+        <div class="flavor-img">
+          <img src="${f.img}" alt="${t("products.saborLabel")} ${name}" loading="lazy">
+          <div class="flavor-badges">
+            <span class="flavor-chip chip-lime">${t("products.vegan")}</span>
+          </div>
+        </div>
+        <div class="flavor-body">
+          <h3 class="flavor-name">${t("products.saborLabel")} ${name}</h3>
+          <p class="flavor-desc">${f.desc[lang]}</p>
+          <button class="flavor-btn" type="button" data-open="${f.id}">
+            <span>${t("products.detailsLabel")}</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </article>`;
+  }).join("");
+  $$("[data-open]", grid).forEach((btn) => {
+    btn.addEventListener("click", () => openFlavor(btn.getAttribute("data-open")));
+  });
+}
+
+/* ------------------------------------------------------------------
+   MODAL DE PRODUCTO
+   ------------------------------------------------------------------ */
+const modal = $("#product-modal");
+
+function openFlavor(id) {
+  const f = FLAVORS.find((x) => x.id === id);
+  if (!f) return;
+  $("#modal-img").style.setProperty("--fc-soft", f.soft);
+  $("#modal-img").innerHTML = `<img src="${f.img}" alt="${f.name[lang]}">`;
+  $("#modal-name").textContent = `${t("modal.saborLabel")} ${f.name[lang]}`;
+  $("#modal-desc").textContent = f.desc[lang];
+  $("#modal-ing").textContent = f.ing[lang];
+  $("#modal-order").setAttribute("href", waLink(CONFIG.WHATSAPP_MESSAGE[lang] + " " + f.name[lang]));
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+$("#modal-close")?.addEventListener("click", closeModal);
+modal?.addEventListener("click", (e) => {
+  if (e.target === modal) closeModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});
+
+/* ------------------------------------------------------------------
+   TESTIMONIOS (slider)
+   ------------------------------------------------------------------ */
+let tIndex = 0;
+let tTimer = null;
+
+function renderTestimonials() {
+  const track = $("#t-track");
+  if (!track) return;
+  const slides = TESTIMONIALS.map((tm) => `
+    <div class="t-slide">
+      <div class="t-card">
+        <p class="t-quote">"${tm.quote[lang]}"</p>
+        <div class="t-author ${tm.cls}">
+          <span class="t-avatar">${tm.initial}</span>
+          <span>
+            <span class="t-name">${tm.name}</span>
+            <span class="t-role"> · ${tm.role[lang]}</span>
+          </span>
+        </div>
+      </div>
+    </div>`).join("");
+  track.innerHTML = `<div class="t-slides-inner">${slides}</div>`;
+  tIndex = 0;
+  renderDots();
+  tGo(0);
+  restartTimer();
+}
+
+function renderDots() {
+  const dots = $("#t-dots");
+  if (!dots) return;
+  dots.innerHTML = TESTIMONIALS.map((tm, i) =>
+    `<button class="t-dot ${i === tIndex ? "active" : ""}" type="button" data-dot="${i}" aria-label="${tm.name}"></button>`
+  ).join("");
+  $$(".t-dot", dots).forEach((d) => {
+    d.addEventListener("click", () => { tGo(Number(d.getAttribute("data-dot"))); restartTimer(); });
+  });
+}
+
+function tGo(i) {
+  tIndex = (i + TESTIMONIALS.length) % TESTIMONIALS.length;
+  const inner = $(".t-slides-inner");
+  if (inner) inner.style.transform = `translateX(-${tIndex * 100}%)`;
+  $$(".t-dot").forEach((d, di) => d.classList.toggle("active", di === tIndex));
+}
+
+function restartTimer() {
+  clearInterval(tTimer);
+  tTimer = setInterval(() => tGo(tIndex + 1), 6000);
+}
+
+$("#t-prev")?.addEventListener("click", () => { tGo(tIndex - 1); restartTimer(); });
+$("#t-next")?.addEventListener("click", () => { tGo(tIndex + 1); restartTimer(); });
+
+/* ------------------------------------------------------------------
+   PREGUNTAS FRECUENTES (acordeón)
+   ------------------------------------------------------------------ */
+function renderFAQ() {
+  const list = $("#faq-list");
+  if (!list) return;
+  list.innerHTML = FAQ.map((item, i) => `
+    <article class="faq-item" data-faq="${i}">
+      <button class="faq-q" type="button" aria-expanded="false">
+        <span>${item.q[lang]}</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        <div class="faq-a-inner"><p>${item.a[lang]}</p></div>
+      </div>
+    </article>`).join("");
+  $$(".faq-q", list).forEach((q) => {
+    q.addEventListener("click", () => {
+      const item = q.closest(".faq-item");
+      const isOpen = item.classList.contains("open");
+      $$(".faq-item", list).forEach((i) => {
+        i.classList.remove("open");
+        $(".faq-q", i)?.setAttribute("aria-expanded", "false");
+      });
+      if (!isOpen) {
+        item.classList.add("open");
+        q.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+}
+
+/* ------------------------------------------------------------------
+   CONTACTO VÍA WHATSAPP
+   ------------------------------------------------------------------ */
+$("#contact-form")?.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = $("#c-name").value.trim();
+  const email = $("#c-email").value.trim();
+  const message = $("#c-message").value.trim();
+  if (!name || !message) {
+    [$("#c-name"), $("#c-message")].forEach((f) => {
+      f.style.borderColor = "#FF4D8D";
+      setTimeout(() => (f.style.borderColor = ""), 900);
+    });
+    return;
+  }
+  let text = `${name}: ${message}`;
+  if (email) text += `\nContacto: ${email}`;
+  window.open(waLink(text), "_blank", "noopener");
+});
+
+/* ------------------------------------------------------------------
+   HEADER, MENÚ MÓVIL Y NAVEGACIÓN ACTIVA
+   ------------------------------------------------------------------ */
+const header = $("#site-header");
+function onScroll() {
+  header.classList.toggle("scrolled", window.scrollY > 24);
+
+  const links = $$(".nav-link");
+  let current = "inicio";
+  $$("main section[id]").forEach((sec) => {
+    if (window.scrollY >= sec.offsetTop - 140) current = sec.id;
+  });
+  links.forEach((l) => {
+    l.classList.toggle("active", l.getAttribute("href") === "#" + current);
+  });
+}
+window.addEventListener("scroll", onScroll, { passive: true });
+
+const menuToggle = $("#menu-toggle");
+const navLinks = $("#nav-links");
+function closeMenu() {
+  navLinks?.classList.remove("open");
+  menuToggle?.classList.remove("open");
+  menuToggle?.setAttribute("aria-expanded", "false");
+}
+menuToggle?.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  menuToggle.classList.toggle("open", open);
+  menuToggle.setAttribute("aria-expanded", String(open));
+});
+$$(".nav-link", navLinks).forEach((l) => l.addEventListener("click", closeMenu));
+document.addEventListener("click", (e) => {
+  if (!navLinks?.contains(e.target) && !menuToggle?.contains(e.target) && navLinks.classList.contains("open")) closeMenu();
+});
+
+/* ------------------------------------------------------------------
+   REVEAL AL HACER SCROLL
+   ------------------------------------------------------------------ */
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
+$$("[data-reveal]").forEach((el) => revealObserver.observe(el));
+
+/* ------------------------------------------------------------------
+   INICIO
+   ------------------------------------------------------------------ */
+$("#year").textContent = new Date().getFullYear();
+applyLang();
+onScroll();
+
+</script>
+</body>
+</html>
