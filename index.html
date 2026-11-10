@@ -1098,7 +1098,7 @@ const FAQ = [
       pt: "Como posso comprá-las ou fazer pedidos?",
     },
     a: {
-      es: "Escríbenos por WhatsApp o por nuestras redes sociales Instagram y TikTok. Te respondemos y coordinamos tu pedido rapidito.",
+      es: "Escríbenos por WhatsApp. Te respondemos y coordinamos tu pedido rapidito.",
       en: "Message us on WhatsApp or on our social media, Instagram and TikTok. We'll reply and arrange your order in no time.",
       pt: "Escreva para a gente pelo WhatsApp ou pelas nossas redes sociais, Instagram e TikTok. Respondemos e organizamos seu pedido rapidinho.",
     },
@@ -1147,10 +1147,6 @@ function refreshWaLinks() {
   $("#social-whatsapp")?.setAttribute("href", wa);
   $("#footer-whatsapp")?.setAttribute("href", wa);
   $("#footer-wa-contact")?.setAttribute("href", wa);
-  $("#social-instagram")?.setAttribute("href", CONFIG.INSTAGRAM_URL);
-  $("#footer-instagram")?.setAttribute("href", CONFIG.INSTAGRAM_URL);
-  $("#social-tiktok")?.setAttribute("href", CONFIG.TIKTOK_URL);
-  $("#footer-tiktok")?.setAttribute("href", CONFIG.TIKTOK_URL);
 }
 
 $$(".lang-btn").forEach((btn) => {
